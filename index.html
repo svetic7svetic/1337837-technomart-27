@@ -136,10 +136,19 @@
 			</p>
 		</footer>
 		<section>	<!--Форма обратной связи-->
-			<h>Напишите нам</h>
-			<p>Ваше имя:<input text="type"/></p>
-			<p>Ваш e-mail:<input text="type"/></p>
-			<p>Текст письма:<input text="type"/></p>
+			<h2>Напишите нам</h2>
+			<form action="" method="post">
+				<p>
+					<label for="feedback-name">Ваше имя:</label>
+					<input id="feedback-name" text="type" name="name" value="" placeholder="Имя Фамилия"/>
+				</p>
+				<p>
+					<label for="feedback-email">Ваш e-mail:</label>
+					<input id="feedback-email" text="type" name="email" value="" placeholder="email@example.com"/>
+				</p>
+				<p>Текст письма:<input text="type"/></p>
+				<button type="submit">Отправить</button>
+			</form>
 		</section>
 	</body>
 </html>
