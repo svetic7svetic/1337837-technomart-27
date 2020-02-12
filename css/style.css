@@ -1,0 +1,83 @@
+body {
+	font-family: Cuprum, sans-serif;
+	background-color: #ffffff;
+	font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-header {
+	background-color: rgb(243,247,248);
+}
+.user-navigation{
+	background-color: rgb(41,52,73);
+	color: #ffffff;
+	list-style: none;
+}
+
+.main-header a{
+	color: #ffffff;
+}
+
+.adress {
+ color: rgb(50,66,92);
+}
+
+.info {
+	color: rgb(238,54,67);
+}
+
+a.telephone {
+	color: rgb(238,54,67);
+}
+
+.main-navigation {
+	background-color: rgb(50,66,92);
+}
+
+.main-navigation ul{
+	list-style: none;	
+}
+
+.sign a {
+	color: #000000;
+	
+}
+
+.popular-items-header,
+.popular-manufacturers-header {
+	background-color: rgb(249,245,240);
+}
+
+/*Тут не работает бекграунд имейдж*/
+.serviсes  {
+ background-color: rgb(244,248,249);
+ background-image: url("img/icons/bg-service.png");
+ background-repeat: no-repeat;
+}
+
+footer {
+	background-color: rgb(41,52,73);
+	color: #ffffff;
+	list-style: none;
+}
+
+.footer-navigation{
+	background-color: rgb(50,66,92);
+}
+
+.footer-navigation ul{
+	list-style: none;	
+}
+
+.footer-navigation a{
+	color: #ffffff;
+}
+
+.footer-info a{
+	color: rgb(255,209,128);
+}
