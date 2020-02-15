@@ -1,5 +1,7 @@
 body {
-	font-family: Cuprum, sans-serif;
+  margin: 0;
+  padding: 0;
+	font-family: Cuprum, Arial, sans-serif;
 	background-color: #ffffff;
 	font-size: 16px;
   line-height: 24px;
@@ -10,10 +12,21 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/*Тут не работает бекграунд имейдж*/
 .main-header {
 	background-color: rgb(243,247,248);
+	background-image: url("img/icons/bg-service.png");
+	background-repeat: no-repeat;
 }
-.user-navigation{
+.shop-navigation{
 	background-color: rgb(41,52,73);
 	color: #ffffff;
 	list-style: none;
@@ -29,13 +42,15 @@ a {
 
 .info {
 	color: rgb(238,54,67);
+	font-style: italic;
 }
 
 a.telephone {
 	color: rgb(238,54,67);
+	font-size: 21px;
 }
 
-.main-navigation {
+.site-navigation {
 	background-color: rgb(50,66,92);
 }
 
@@ -48,8 +63,7 @@ a.telephone {
 	
 }
 
-.popular-items-header,
-.popular-manufacturers-header {
+.popular{
 	background-color: rgb(249,245,240);
 }
 
@@ -80,4 +94,162 @@ footer {
 
 .footer-info a{
 	color: rgb(255,209,128);
+}
+
+
+/*----Сеточные линии----*/
+html,
+body {
+	width: 940px;
+}
+
+.main-navigation {
+	display:flex;
+	flex-direction: column;
+}
+
+
+.info-navigation {
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.shop-navigation {
+	display:flex;
+	height: 42px;
+	align-items: center;
+	justify-content: space-around;
+}	
+
+.user-navigation{
+	display:flex;
+	justify-content: space-around;
+
+}
+
+.site-navigation{
+	display:flex;
+	height: 60px;
+	align-items: center;
+	justify-content: space-around;	
+}
+	
+/*----Тело----*/
+
+
+
+.advantages-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	color: #fff;
+}
+
+.advantages-list a {
+ color: #fff;
+}
+
+.orange {
+	background-image: url("img/icons/icon-materials.svg");
+	background-repeat: no-repeat;
+	background-color: rgb(255,191,71);
+}
+
+.skyblue {
+	background-color: rgb(59,188,227);
+}
+
+.pink {
+	background-color: rgb(220,145,216);
+}
+
+.green {
+	background-color: rgb(142,215,143);
+}
+
+.advantages-item {
+	height: 123px;
+	width: 300px;
+	margin-bottom: 20px;
+}	
+
+.popular{
+	display: flex;
+	padding-left: 30px;
+	padding-right: 24px;
+	justify-content: space-between;
+	align-items: center;
+	height: 89px;
+} 
+
+.popular h2{
+	color: rgb(50,66,92);
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.popular-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	text-align:center;
+	list-style: none;
+}	
+
+.about-us{
+	display: flex;
+
+}
+
+.partners {
+	margin-left: 36px;
+	font-size: 18px;
+	font-weight: normal;
+
+}
+
+.partners a{
+	color: #000;
+}
+
+/*----Подвал----*/	
+.footer {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.footer-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 193px;
+	align-items: center;
+}
+
+.footer-site-navigation {
+	display: flex;
+}
+
+.footer-site-navigation li{
+	padding-left: 60px;
+}
+
+.footer-items-navigation {
+	display: flex;
+}
+
+.footer-items-navigation a{
+	color: rgb(255,209,128);
+	padding-left: 60px;
+}
+
+.footer-info{
+	display:flex;
+	justify-content: space-between;
+	height: 107px;
+	align-items: center;
 }
