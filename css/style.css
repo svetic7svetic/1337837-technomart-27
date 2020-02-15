@@ -20,12 +20,6 @@ a {
   margin: -1px;
 }
 
-/*Тут не работает бекграунд имейдж*/
-.main-header {
-	background-color: rgb(243,247,248);
-	background-image: url("img/icons/bg-service.png");
-	background-repeat: no-repeat;
-}
 .shop-navigation{
 	background-color: rgb(41,52,73);
 	color: #ffffff;
@@ -103,6 +97,14 @@ body {
 	width: 940px;
 }
 
+/*Тут не работает бекграунд имейдж*/
+.main-header {
+	height: 320px;
+	background-color: rgb(243,247,248);
+	background-image: url("img/icons/bg-service.png");
+	background-repeat: no-repeat;
+}
+
 .main-navigation {
 	display:flex;
 	flex-direction: column;
@@ -113,6 +115,7 @@ body {
 	display:flex;
 	align-items: center;
 	justify-content: space-around;
+	height: 158px;
 }
 
 .shop-navigation {
