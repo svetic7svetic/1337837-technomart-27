@@ -3,15 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Интернет-магазин «Техномарт»</title>
-		<link href="css/normalize.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
 		<link href="css/style.css" rel="stylesheet" />
 	</head>
 	<body>
 		<header class="main-header">
-			<nav class="main-navigation">
-				<section class="shop-navigation">
-					<a class="main-header-logo">
-						<img src="img/icons/logo.png" width="220" height="47" alt="Логотип интернет-магазина «Техномарт»"/>
+			<nav class="main-navigation container">
+				<section class="shop-navigation ">
+					<a href="index.html" class="main-header-logo">
+						<img src="img/icons/logo.png" width="220" height="42" alt="Логотип интернет-магазина «Техномарт»"/>
 					</a>
 					<label for="search">Поиск:</label>
 					<input id="search" type="text" name="name" value=""/>
@@ -52,15 +52,15 @@
 						</p>
 					</div>
 					<div class="sign">
-						<a href="#">Войти</a>
-						<a href="#">Регистрация</a>
+						<a class="sign-in" href="#">Войти</a>
+						<a class="sign-up" href="#">Регистрация</a>
 					</div>
 				</section>
 				<section>
 					<ul class="site-navigation">
-						<li><a>Главная</a></li>
+						<li><a href="index.html">Главная</a></li>
 						<li><a href="#">Компания</a></li>
-						<li><a href="catalog.html">Каталог</a></li>
+						<li><a>Каталог</a></li>
 						<li><a href="#">Новости</a></li>
 						<li><a href="#">Спецпредложения</a></li>
 						<li><a href="#">Доставка</a></li>
@@ -257,29 +257,31 @@
 			</article>
 		</main>
 		<footer class="footer">
-			<nav class="footer-navigation">
-				<a>
-					<img src="img/icons/logo-2.png" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»">
-				</a>
-				<ul class="footer-site-navigation">
-					<li><a href="#">Компания</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-				<p>
-					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-					+7 (812) 555-05-55
-				</p>
-				<ul class="footer-items-navigation">
-					<li><a href="#">Материалы</a></li>
-					<li><a href="#">Техника</a></li>
-					<li><a href="#">Инструменты</a></li>
-					<li><a href="#">Спецпредложения</a></li>
-				</ul>
-			</nav>
-			<section class="footer-info">
+			<section class="footer-background">
+				<nav class="footer-navigation container">
+					<a href="index.html" class="main-footer-logo">
+						<img src="img/icons/logo-2.png" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»">
+					</a>
+					<ul class="footer-site-navigation">
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<p>
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+						+7 (812) 555-05-55
+					</p>
+					<ul class="footer-items-navigation">
+						<li><a href="#">Материалы</a></li>
+						<li><a href="#">Техника</a></li>
+						<li><a href="#">Инструменты</a></li>
+						<li><a href="#">Спецпредложения</a></li>
+					</ul>
+				</nav>
+			</section>
+			<section class="footer-info container">
 				<p>
 					&copy; 2010–2019 Компания «Техномарт»<br>
 					Все права защищены
