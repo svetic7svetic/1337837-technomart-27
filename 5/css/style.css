@@ -1,11 +1,31 @@
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0px;
+ 	padding: 0px;
 	font-family: Cuprum, Arial, sans-serif;
 	background-color: #ffffff;
-	font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
+	font-size: 17px;
+ 	line-height: 18px;
+ 	font-weight: 400;	
+/*
+ 	opacity: 0.7;
+ 	background-image: url("../technomart-index.jpg");
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0;
+*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
 }
 
 a {
@@ -13,96 +33,40 @@ a {
 }
 
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
 
-.shop-navigation{
-	background-color: rgb(41,52,73);
-	color: #ffffff;
-	list-style: none;
+.container {
+ 	width: 940px;
+ 	margin: 0 auto;
+ 	padding: 0;
 }
 
 .main-header a{
 	color: #ffffff;
 }
 
-.adress {
- color: rgb(50,66,92);
-}
 
-.info {
-	color: rgb(238,54,67);
-	font-style: italic;
-}
 
-a.telephone {
-	color: rgb(238,54,67);
-	font-size: 21px;
-}
-
-.site-navigation {
-	background-color: rgb(50,66,92);
-}
-
-.main-navigation ul{
-	list-style: none;	
-}
-
-.sign a {
-	color: #000000;
-	
-}
-
-.popular{
-	background-color: rgb(249,245,240);
-}
-
-/*Тут не работает бекграунд имейдж*/
-.serviсes  {
- background-color: rgb(244,248,249);
- background-image: url("img/icons/bg-service.png");
- background-repeat: no-repeat;
-}
-
-footer {
-	background-color: rgb(41,52,73);
-	color: #ffffff;
-	list-style: none;
-}
-
-.footer-navigation{
-	background-color: rgb(50,66,92);
-}
-
-.footer-navigation ul{
-	list-style: none;	
-}
-
-.footer-navigation a{
-	color: #ffffff;
-}
-
-.footer-info a{
-	color: rgb(255,209,128);
-}
 
 
 /*----Сеточные линии----*/
-html,
-body {
-	width: 940px;
+
+
+.main-header-logo img{
+	box-shadow: 0 5px 1px rgb(181,41,51);
 }
 
-/*Тут не работает бекграунд имейдж*/
+.main-header-logo {
+	position:absolute;
+}
+
 .main-header {
-	height: 320px;
 	background-color: rgb(243,247,248);
-	background-image: url("img/icons/bg-service.png");
-	background-repeat: no-repeat;
 }
 
 .main-navigation {
@@ -110,39 +74,159 @@ body {
 	flex-direction: column;
 }
 
+.main-navigation ul{
+	list-style: none;	
+}
 
-.info-navigation {
-	display:flex;
-	align-items: center;
-	justify-content: space-around;
-	height: 158px;
+.shop-wrapper {
+	background-color: rgb(41,52,73);
 }
 
 .shop-navigation {
 	display:flex;
-	height: 42px;
 	align-items: center;
-	justify-content: space-around;
-}	
+	justify-content: flex-start;
+	font-size: 17px;
+	line-height: 18px;
+	background-color: rgb(41,52,73);
+	color: #ffffff;
+}
 
-.user-navigation{
+.user-navigation {
 	display:flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0px;
+	padding: 12px;
+}
+
+.shop-search{
+	display: flex;
+	margin-left: 300px;
+}
+
+.info-navigation {
+	display:flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-top: 40px;
+	line-height: 23px;
+}
+
+.info {
+	color: rgb(238,54,67);
+	font-size: 16px;
+	font-style: italic;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.telephone a {
+	color: rgb(238,54,67);
+	font-size: 21px;
+	border: 3px solid white;
+	padding-top: 8px;
+	padding-left: 70px;
+	padding-bottom: 8px;
+	padding-right: 50px;
+	position: relative;
 
 }
 
-.site-navigation{
+.telephone a:before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	width: 20px;
+	height: 20px;
+	background-image:url("../img/icons/icon-phone.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.telephone a {
+	text-align: center;
+}
+
+.adress {
+	color: rgb(50,66,92);
+	font-size: 14px;
+	text-align: center;
+}
+
+.sign {
+	margin-top: 17px;
+}
+
+.sign-in,
+.sign-up {
+	background-color: white;
+	font-size: 21px;
+	padding: 11px 20px;
+}
+
+.sign a {
+	color: #000000;
+	position: relative;
+}
+
+a.sign-in {
+	padding-left: 60px;
+	margin-right: 5px;
+}
+
+a.sign-in:before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 14px;
+	left: 14px;
+	background-image: url("../img/icons/icon-login.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+}
+
+.site-navigation {
 	display:flex;
-	height: 60px;
-	align-items: center;
-	justify-content: space-around;	
+	justify-content: space-around;
+	padding: 0px;
+	margin-top: 23px;
+	margin-bottom: 74px;
+	background-color: rgb(50,66,92);
+	box-shadow: 0 5px 1px rgb(41,52,73);
+}
+
+.site-navigation li {
+	padding: 18px 33px;
+}
+
+.site-navigation li:hover {
+	background-color: rgb(41,52,73);
 }
 	
+.site-navigation li:active {
+	background-color: rgb(29,39,57);
+	opacity: 0.5;
+	box-shadow: 0 5px 1px rgb(29,39,57);
+}
 /*----Тело----*/
 
+.advantages {
+	margin-top: 50px;
+	margin-bottom: 33px;
+}
 
+.advantages-item h3 {
+	font-size: 24px;
+	font-weight: bold;
+}
 
 .advantages-list {
+	padding: 0px;
+	margin: 0px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -150,13 +234,22 @@ body {
 	color: #fff;
 }
 
+.column {
+	flex-direction: column;
+	margin-top: 0px;
+}
+
 .advantages-list a {
- color: #fff;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;	
+	font-weight: normal;	
 }
 
 .orange {
-	background-image: url("img/icons/icon-materials.svg");
+	background-image: url("../img/icons/icon-materials.svg");
 	background-repeat: no-repeat;
+	background-position: right;
 	background-color: rgb(255,191,71);
 }
 
@@ -180,16 +273,21 @@ body {
 
 .popular{
 	display: flex;
-	padding-left: 30px;
-	padding-right: 24px;
+	padding-top: 6px;
+	padding-left: 28px;
+	padding-bottom: 10px;
+	padding-right: 25px;
+	background-color: rgb(249,245,240);
 	justify-content: space-between;
 	align-items: center;
-	height: 89px;
+	margin-bottom: 14px;
+	
 } 
 
 .popular h2{
 	color: rgb(50,66,92);
 	font-size: 30px;
+	line-height: 30px;
 	text-transform: uppercase;
 	font-weight: normal;
 }
@@ -200,11 +298,150 @@ body {
 	flex-wrap:wrap;
 	text-align:center;
 	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: bold;
+	line-height: 20px;
 }	
+
+.popular-list li {
+	border: 1px solid rgb(234,234,234);
+	margin-bottom: 20px;
+}
+
+.button-red {
+	background-color: rgb(238,54,67);
+	padding: 10px 55px;
+	border-radius:3px; 
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Cuprum", "Arial", sans-serif;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: white;
+}
+
+/*----Сетка товаров----*/
+
+.item {
+	position: relative;
+}
+
+h3.title {
+	margin: 12px auto;
+}
+
+.discount {
+	min-height: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: #999;
+	text-decoration: line-through;
+}
+
+.price {
+ 	width: 120px;
+ 	margin: 0 auto;
+	margin-bottom: 20px;
+ 	padding: 10px 20px;
+	color: white;
+ 	background: #ee3643;
+ 	border-radius: 3px;
+ 	position: relative;
+}
+
+.item .price:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -20px;
+	border: 20px solid white;
+	border-left-color: #ee3643;
+}
+
+
+.item .actions {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 218px;
+	padding: 40px 0;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 1;
+}
+
+.buy,
+.bookmark {
+	display: block;
+	width: 129px;
+	margin: 0 auto;
+	margin-bottom: 7px;
+	padding: 7px 0; 
+	background-color: #63a63e;
+	border: 3px solid #63a63e;
+	border-bottom-color: #367315;
+	border-radius:3px; 
+	color: white;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Cuprum", "Arial", sans-serif;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.item .actions .bookmark {
+	color: #32425c;
+	background: white;
+	border-bottom-color: #63a63e;
+}
+
+.item .actions {
+	display: none;
+}
+
+.item:hover {
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.item:hover .actions {
+	display: block;
+}
+
+
+/*----*/
+.background-services {
+	background-color: rgb(243,247,248);
+	margin-top: 65px;
+}
+
+.serviсes h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.slider-service h2 {
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: rgb(50,66,92);
+}
 
 .about-us{
 	display: flex;
+}
 
+.about-us h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.about-us p {
+	font-size: 13px;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .partners {
@@ -219,33 +456,56 @@ body {
 }
 
 /*----Подвал----*/	
+
+footer {
+	background-color: rgb(41,52,73);
+	color: #ffffff;
+	list-style: none;
+}
+
 .footer {
 	display: flex;
 	flex-direction: column;
+}
 
+.footer-background	{
+	background-color: rgb(50,66,92);
 }
 
 .footer-navigation {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	height: 193px;
 	align-items: center;
+	align-items: flex-end;
+}
+
+.footer-navigation ul {
+	list-style: none;	
 }
 
 .footer-site-navigation {
 	display: flex;
 }
 
-.footer-site-navigation li{
+.footer-site-navigation li:not(:first-child) {
 	padding-left: 60px;
 }
+
 
 .footer-items-navigation {
 	display: flex;
 }
 
-.footer-items-navigation a{
+.footer-navigation a {
+	color: #ffffff;
+}
+
+.footer-info a{
+	color: rgb(255,209,128);
+}
+
+.footer-items-navigation a {
 	color: rgb(255,209,128);
 	padding-left: 60px;
 }
