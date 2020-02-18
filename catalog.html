@@ -9,38 +9,40 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<nav class="main-navigation container">
-				<section class="shop-navigation ">
-					<div class="header-search">
-						<a class="main-header-logo">
+			<div class="main-navigation">
+				<div class="shop-wrapper">
+					<section class="shop-navigation container">
+						<a class="main-header-logo" href="index.html">
 							<img src="img/icons/logo.png" width="220" height="42" alt="Логотип интернет-магазина «Техномарт»"/>
 						</a>
-						<label for="search">Поиск:</label>
-						<input id="search" type="text" name="name" value=""/>
-						<!--Тут будет поиск-->
-					</div>
-					<ul class="user-navigation">
-						<li>
-							<a href="#">
-								Закладки:
-							</a>
-							<!--Тут будут закладки-->
-						</li>
-						<li>
-							<a href="#">
-								Корзина:
-							</a>
-							<!--Тут будет корзина-->
-						</li>
-						<li>
-							<a href="#">
-								Оформить заказ
-							</a>
-						<!--Тут будет оформить заказ-->
-						</li>
-					</ul>
-				</section>
-				<section class="info-navigation">
+						<div class="shop-search">
+							<label for="search" class="visually-hidden">Поиск:</label>
+							<input id="search" type="text" name="name" value="" placeholder="Поиск:"/>
+							<!--Тут будет поиск-->
+						</div>
+						<ul class="user-navigation">
+							<li>
+								<a href="#">
+									Закладки:
+								</a>
+								<!--Тут будут закладки-->
+							</li>
+							<li>
+								<a href="#">
+									Корзина:
+								</a>
+								<!--Тут будет корзина-->
+							</li>
+							<li>
+								<a href="#">
+									Оформить заказ
+								</a>
+							<!--Тут будет оформить заказ-->
+							</li>
+						</ul>
+					</section>
+				</div>
+				<section class="info-navigation container">
 					<div>
 						<p class="info">
 							Интернет-магазин</br>
@@ -49,17 +51,17 @@
 						</p>
 					</div>
 					<div>
-						<p>
-							<a class="telephone" href="tel:+78125550555">+7 (812) 555-05-55</a></br>
-							<span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+						<p class="telephone">
+							<a href="tel:+78125550555">+7 (812) 555-05-55</a></br>
 						</p>
+						<div class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
 					</div>
 					<div class="sign">
 						<a class="sign-in" href="#">Войти</a>
 						<a class="sign-up" href="#">Регистрация</a>
 					</div>
 				</section>
-				<section>
+				<nav  class="container">
 					<ul class="site-navigation">
 						<li><a href="index.html">Главная</a></li>
 						<li><a href="#">Компания</a></li>
@@ -69,8 +71,8 @@
 						<li><a href="#">Доставка</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
-				</section>
-			</nav>
+				</nav>
+			</div>
 		</header>
 		<main>
 			<ul>

@@ -6,6 +6,12 @@ body {
 	font-size: 17px;
  	line-height: 18px;
  	font-weight: 400;	
+/*
+ 	opacity: 0.7;
+ 	background-image: url("../technomart-index.jpg");
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0;
+*/
 }
 
 img {
@@ -45,9 +51,7 @@ a {
 }
 
 
-.sign a {
-	color: #000000;
-}
+
 
 
 /*----Сеточные линии----*/
@@ -103,30 +107,85 @@ a {
 
 .info-navigation {
 	display:flex;
-	align-items: center;
-	justify-content: space-around;
-	margin-top: 26px;
-	margin-bottom: 20px;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-top: 40px;
 	line-height: 23px;
 }
 
 .info {
 	color: rgb(238,54,67);
+	font-size: 16px;
 	font-style: italic;
+	margin-top: 10px;
+	margin-left: 50px;
 }
 
 .telephone a {
 	color: rgb(238,54,67);
 	font-size: 21px;
+	border: 3px solid white;
+	padding-top: 8px;
+	padding-left: 70px;
+	padding-bottom: 8px;
+	padding-right: 50px;
+	position: relative;
+
 }
 
-p.telephone {
+.telephone a:before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	width: 20px;
+	height: 20px;
+	background-image:url("../img/icons/icon-phone.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.telephone a {
 	text-align: center;
 }
 
 .adress {
 	color: rgb(50,66,92);
 	font-size: 14px;
+	text-align: center;
+}
+
+.sign {
+	margin-top: 17px;
+}
+
+.sign-in,
+.sign-up {
+	background-color: white;
+	font-size: 21px;
+	padding: 11px 20px;
+}
+
+.sign a {
+	color: #000000;
+	position: relative;
+}
+
+a.sign-in {
+	padding-left: 60px;
+	margin-right: 5px;
+}
+
+a.sign-in:before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 14px;
+	left: 14px;
+	background-image: url("../img/icons/icon-login.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 
 }
 
@@ -134,13 +193,14 @@ p.telephone {
 	display:flex;
 	justify-content: space-around;
 	padding: 0px;
-	margin-bottom: 60px;
+	margin-top: 23px;
+	margin-bottom: 74px;
 	background-color: rgb(50,66,92);
 	box-shadow: 0 5px 1px rgb(41,52,73);
 }
 
 .site-navigation li {
-	padding: 22px 33px;
+	padding: 18px 33px;
 }
 
 .site-navigation li:hover {
@@ -213,18 +273,21 @@ p.telephone {
 
 .popular{
 	display: flex;
-	padding-left: 30px;
-	padding-right: 24px;
+	padding-top: 6px;
+	padding-left: 28px;
+	padding-bottom: 10px;
+	padding-right: 25px;
 	background-color: rgb(249,245,240);
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 	
 } 
 
 .popular h2{
 	color: rgb(50,66,92);
 	font-size: 30px;
+	line-height: 30px;
 	text-transform: uppercase;
 	font-weight: normal;
 }
@@ -245,7 +308,18 @@ p.telephone {
 .popular-list li {
 	border: 1px solid rgb(234,234,234);
 	margin-bottom: 20px;
+}
 
+.button-red {
+	background-color: rgb(238,54,67);
+	padding: 10px 55px;
+	border-radius:3px; 
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Cuprum", "Arial", sans-serif;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: white;
 }
 
 /*----Сетка товаров----*/
@@ -297,8 +371,8 @@ h3.title {
 	z-index: 1;
 }
 
-.item .actions .buy,
-.item .actions .bookmark {
+.buy,
+.bookmark {
 	display: block;
 	width: 129px;
 	margin: 0 auto;
