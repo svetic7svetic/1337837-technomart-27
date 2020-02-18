@@ -93,6 +93,7 @@ a {
 	justify-content: space-between;
 	width: 100%;
 	margin: 0px;
+	padding: 12px;
 }
 
 .shop-search{
@@ -132,15 +133,25 @@ p.telephone {
 .site-navigation {
 	display:flex;
 	justify-content: space-around;
-	padding-right: 0px;
-	padding-left: 0px;
-	padding-top: 19px;
-	padding-bottom: 18px;
+	padding: 0px;
 	margin-bottom: 60px;
-	border-bottom: 5px solid rgb(41,52,73);
 	background-color: rgb(50,66,92);
+	box-shadow: 0 5px 1px rgb(41,52,73);
+}
+
+.site-navigation li {
+	padding: 22px 33px;
+}
+
+.site-navigation li:hover {
+	background-color: rgb(41,52,73);
 }
 	
+.site-navigation li:active {
+	background-color: rgb(29,39,57);
+	opacity: 0.5;
+	box-shadow: 0 5px 1px rgb(29,39,57);
+}
 /*----Тело----*/
 
 .advantages {
