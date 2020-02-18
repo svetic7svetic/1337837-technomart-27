@@ -322,6 +322,14 @@ a.sign-in:before {
 	color: white;
 }
 
+.button-red:hover {
+	background-color: rgb(202,44,55);
+}
+
+.button-red:active {
+	background-color: rgb(186,39,50);
+}
+
 /*----Сетка товаров----*/
 
 .item {
@@ -361,7 +369,7 @@ h3.title {
 }
 
 
-.item .actions {
+.actions {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -369,6 +377,7 @@ h3.title {
 	padding: 40px 0;
 	background-color: rgba(255,255,255,0.9);
 	z-index: 1;
+	display: none;
 }
 
 .buy,
@@ -391,17 +400,14 @@ h3.title {
 	text-transform: uppercase;
 }
 
-.item .actions .bookmark {
+.bookmark {
 	color: #32425c;
 	background: white;
 	border-bottom-color: #63a63e;
 }
 
-.item .actions {
-	display: none;
-}
-
-.item:hover {
+.item:hover,
+.manufacturers:hover {
 	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
@@ -409,6 +415,9 @@ h3.title {
 	display: block;
 }
 
+.manufacturers:active {
+	opacity: 0.3;
+}
 
 /*----*/
 .background-services {
