@@ -239,6 +239,10 @@ p.telephone {
 
 /*----Сетка товаров----*/
 
+.item {
+	position: relative;
+}
+
 h3.title {
 	margin: 12px auto;
 }
@@ -263,19 +267,65 @@ h3.title {
 }
 
 .item .price:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -20px;
-  border: 20px solid white;
-  border-left-color: #ee3643;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -20px;
+	border: 20px solid white;
+	border-left-color: #ee3643;
 }
 
 
+.item .actions {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 218px;
+	padding: 40px 0;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 1;
+}
+
+.item .actions .buy,
+.item .actions .bookmark {
+	display: block;
+	width: 129px;
+	margin: 0 auto;
+	margin-bottom: 7px;
+	padding: 7px 0; 
+	background-color: #63a63e;
+	border: 3px solid #63a63e;
+	border-bottom-color: #367315;
+	border-radius:3px; 
+	color: white;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Cuprum", "Arial", sans-serif;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.item .actions .bookmark {
+	color: #32425c;
+	background: white;
+	border-bottom-color: #63a63e;
+}
+
+.item .actions {
+	display: none;
+}
+
+.item:hover {
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.item:hover .actions {
+	display: block;
+}
 
 
-
-
+/*----*/
 .background-services {
 	background-color: rgb(243,247,248);
 	margin-top: 65px;
