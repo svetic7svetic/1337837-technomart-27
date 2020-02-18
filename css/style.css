@@ -3,9 +3,15 @@ body {
  	padding: 0px;
 	font-family: Cuprum, Arial, sans-serif;
 	background-color: #ffffff;
-	font-size: 16px;
+	font-size: 17px;
  	line-height: 18px;
- 	font-weight: 700;	
+ 	font-weight: 400;	
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 html {
@@ -38,23 +44,6 @@ a {
 	color: #ffffff;
 }
 
-.adress {
-	color: rgb(50,66,92);
-}
-
-.info {
-	color: rgb(238,54,67);
-	font-style: italic;
-}
-
-a.telephone {
-	color: rgb(238,54,67);
-	font-size: 21px;
-}
-
-.main-navigation ul{
-	list-style: none;	
-}
 
 .sign a {
 	color: #000000;
@@ -65,8 +54,11 @@ a.telephone {
 
 
 .main-header-logo img{
-	display: block;
-	border-bottom: 5px solid rgb(181,41,51);
+	box-shadow: 0 5px 1px rgb(181,41,51);
+}
+
+.main-header-logo {
+	position:absolute;
 }
 
 .main-header {
@@ -78,6 +70,35 @@ a.telephone {
 	flex-direction: column;
 }
 
+.main-navigation ul{
+	list-style: none;	
+}
+
+.shop-wrapper {
+	background-color: rgb(41,52,73);
+}
+
+.shop-navigation {
+	display:flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 17px;
+	line-height: 18px;
+	background-color: rgb(41,52,73);
+	color: #ffffff;
+}
+
+.user-navigation {
+	display:flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0px;
+}
+
+.shop-search{
+	display: flex;
+	margin-left: 300px;
+}
 
 .info-navigation {
 	display:flex;
@@ -88,27 +109,31 @@ a.telephone {
 	line-height: 23px;
 }
 
-.shop-navigation {
-	display:flex;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 17px;
-	line-height: 18px;
-	background-color: rgb(41,52,73);
-	color: #ffffff;
+.info {
+	color: rgb(238,54,67);
+	font-style: italic;
+}
 
-}	
+.telephone a {
+	color: rgb(238,54,67);
+	font-size: 21px;
+}
 
-.user-navigation {
-	display:flex;
-	justify-content: space-around;
+p.telephone {
+	text-align: center;
+}
+
+.adress {
+	color: rgb(50,66,92);
+	font-size: 14px;
 
 }
 
 .site-navigation {
 	display:flex;
-	align-items: center;
-	justify-content: space-around;	
+	justify-content: space-around;
+	padding-right: 0px;
+	padding-left: 0px;
 	padding-top: 19px;
 	padding-bottom: 18px;
 	margin-bottom: 60px;
@@ -118,14 +143,19 @@ a.telephone {
 	
 /*----Тело----*/
 
+.advantages {
+	margin-top: 50px;
+	margin-bottom: 33px;
+}
 
-ul.advantages-list {
-	padding: 0px;
+.advantages-item h3 {
+	font-size: 24px;
+	font-weight: bold;
 }
 
 .advantages-list {
-	margin-top: 59px;
-	margin-bottom: 53px;
+	padding: 0px;
+	margin: 0px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -140,6 +170,9 @@ ul.advantages-list {
 
 .advantages-list a {
 	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;	
+	font-weight: normal;	
 }
 
 .orange {
@@ -192,19 +225,88 @@ ul.advantages-list {
 	text-align:center;
 	list-style: none;
 	padding: 0px;
+	margin: 0px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: bold;
+	line-height: 20px;
 }	
 
 .popular-list li {
 	border: 1px solid rgb(234,234,234);
+	margin-bottom: 20px;
+
 }
+
+/*----Сетка товаров----*/
+
+h3.title {
+	margin: 12px auto;
+}
+
+.discount {
+	min-height: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: #999;
+	text-decoration: line-through;
+}
+
+.price {
+ 	width: 120px;
+ 	margin: 0 auto;
+	margin-bottom: 20px;
+ 	padding: 10px 20px;
+	color: white;
+ 	background: #ee3643;
+ 	border-radius: 3px;
+ 	position: relative;
+}
+
+.item .price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
+
+
+
+
 
 .background-services {
 	background-color: rgb(243,247,248);
+	margin-top: 65px;
+}
+
+.serviсes h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.slider-service h2 {
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: rgb(50,66,92);
 }
 
 .about-us{
 	display: flex;
+}
 
+.about-us h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.about-us p {
+	font-size: 13px;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .partners {
@@ -235,16 +337,12 @@ footer {
 	background-color: rgb(50,66,92);
 }
 
-.main-footer-logo img {
-	display: block;
-}
-
 .footer-navigation {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	height: 193px;
 	align-items: center;
+	align-items: flex-end;
 }
 
 .footer-navigation ul {
@@ -255,9 +353,10 @@ footer {
 	display: flex;
 }
 
-.footer-site-navigation li {
+.footer-site-navigation li:not(:first-child) {
 	padding-left: 60px;
 }
+
 
 .footer-items-navigation {
 	display: flex;

@@ -3,21 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Интернет-магазин «Техномарт»</title>
-		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/normalize.css" rel="stylesheet" />
 		<link href="css/style.css" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
 			<nav class="main-navigation container">
 				<section class="shop-navigation ">
-					<a href="index.html" class="main-header-logo">
-						<img src="img/icons/logo.png" width="220" height="42" alt="Логотип интернет-магазина «Техномарт»"/>
-					</a>
-					<label for="search">Поиск:</label>
-					<input id="search" type="text" name="name" value=""/>
-					<!--Тут будет поиск-->
+					<div class="header-search">
+						<a class="main-header-logo">
+							<img src="img/icons/logo.png" width="220" height="42" alt="Логотип интернет-магазина «Техномарт»"/>
+						</a>
+						<label for="search">Поиск:</label>
+						<input id="search" type="text" name="name" value=""/>
+						<!--Тут будет поиск-->
+					</div>
 					<ul class="user-navigation">
 						<li>
 							<a href="#">
