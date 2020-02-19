@@ -15,8 +15,6 @@ body {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -83,6 +81,7 @@ a {
 }
 
 .shop-navigation {
+	position: relative;
 	display:flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -156,7 +155,7 @@ a {
 }
 
 .sign {
-	margin-top: 17px;
+	margin-top: 7px;
 }
 
 .sign-in,
@@ -167,6 +166,7 @@ a {
 }
 
 .sign a {
+	display: inline-block;
 	color: #000000;
 	position: relative;
 }
@@ -176,7 +176,7 @@ a.sign-in {
 	margin-right: 5px;
 }
 
-a.sign-in:before {
+.sign-in:before {
 	content: "";
 	position: absolute;
 	width: 20px;
@@ -186,8 +186,26 @@ a.sign-in:before {
 	background-image: url("../img/icons/icon-login.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-
+	opacity: 0.3;
 }
+.sign-in:hover::before {
+	opacity: 1;
+}
+
+.sign-in:hover,
+.sign-up:hover {
+	color: rgb(238,54,67);
+}
+
+.sign-in:active::before,
+.sign-in:active,
+.sign-up:active {
+	opacity: 0.3;
+}
+
+
+
+
 
 .site-navigation {
 	display:flex;
@@ -215,8 +233,8 @@ a.sign-in:before {
 /*----Тело----*/
 
 .advantages {
-	margin-top: 50px;
-	margin-bottom: 33px;
+	padding-top: 50px;
+	padding-bottom: 33px;
 }
 
 .advantages-item h3 {
@@ -240,35 +258,79 @@ a.sign-in:before {
 }
 
 .advantages-list a {
-	color: #fff;
+	display: block;
+	color: white;
 	text-transform: uppercase;
 	font-size: 14px;	
-	font-weight: normal;	
+	font-weight: normal;
+	text-align: center;
+}
+
+.advantages-item h3 {
+	padding-left: 20px;
+}
+
+.advantages-button {
+	margin-right: 140px;
+	margin-left: 25px;
+	padding: 10px 0;
+	background-color: rgba(0,0,0,0.1);
+	border-radius:3px; 
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Cuprum", "Arial", sans-serif;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.advantages-button:hover {
+	background-color: rgba(0,0,0,0.2);	
+}
+
+.advantages-button:active {
+	background-color: rgba(0,0,0,0.3);
 }
 
 .orange {
 	background-image: url("../img/icons/icon-materials.svg");
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: 213px center;
 	background-color: rgb(255,191,71);
 }
 
 .skyblue {
 	background-color: rgb(59,188,227);
+	background-image: url("../img/icons/icon-tools.svg");
+	background-repeat: no-repeat;
+	background-position: 197px center;
 }
 
 .pink {
 	background-color: rgb(220,145,216);
+	background-image: url("../img/icons/icon-technics.svg");
+	background-repeat: no-repeat;
+	background-position: 191px center;	
 }
 
 .green {
 	background-color: rgb(142,215,143);
+	background-image: url("../img/icons/icon-discount.svg");
+	background-repeat: no-repeat;
+	background-position: 196px center;	
+}
+
+.yellow {
+	background-color: rgb(255,192,71);
+	background-image: url("../img/icons/icon-delivery.svg");
+	background-repeat: no-repeat;
+	background-position: 191px center;	
 }
 
 .advantages-item {
 	height: 123px;
 	width: 300px;
 	margin-bottom: 20px;
+	position: relative;
 }	
 
 .popular{
@@ -305,14 +367,14 @@ a.sign-in:before {
 	line-height: 20px;
 }	
 
+
 .popular-list li {
 	border: 1px solid rgb(234,234,234);
 	margin-bottom: 20px;
 }
 
-.button-red {
+.button--red {
 	background-color: rgb(238,54,67);
-	padding: 10px 55px;
 	border-radius:3px; 
 	font-size: 14px;
 	font-weight: normal;
@@ -322,12 +384,16 @@ a.sign-in:before {
 	color: white;
 }
 
-.button-red:hover {
+.button--red:hover {
 	background-color: rgb(202,44,55);
 }
 
-.button-red:active {
+.button--red:active {
 	background-color: rgb(186,39,50);
+}
+
+.all-items {
+	padding: 10px 55px;
 }
 
 /*----Сетка товаров----*/
@@ -337,7 +403,8 @@ a.sign-in:before {
 }
 
 h3.title {
-	margin: 12px auto;
+	margin: 0;
+	padding: 12px;
 }
 
 .discount {
@@ -366,6 +433,22 @@ h3.title {
 	border-left-color: #ee3643;
 }
 
+.flag {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	width: 60px;
+	height: 60px;
+	text-indent: -1000px;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.flag-new {
+	background-image: url("../img/icons/new flag.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 
 .actions {
 	position: absolute;
@@ -396,12 +479,55 @@ h3.title {
 	line-height: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
+	position: relative;
+}
+
+.buy:before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 8px;
+	left: 10px;
+	background-image: url("../img/icons/cart-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.3;
+	fill:white;
+}
+
+
+.buy:hover::before {
+	opacity: 1;
+}
+
+.buy:active::before {
+	opacity: 1;
 }
 
 .bookmark {
 	color: #32425c;
 	background: white;
 	border-bottom-color: #63a63e;
+}
+
+.buy:hover {
+	background-color: rgb(95,187,45);
+	border: 3px solid rgb(95,187,45);
+	border-bottom-color: rgb(54,115,21);
+}
+
+.buy:active {
+	background-color: rgb(81,133,52);
+	border: 3px solid rgb(81,133,52);
+}
+
+.bookmark:hover {
+	border: 3px solid rgb(50,66,92);
+}
+
+.bookmark:active {
+	opacity: 0.3;
 }
 
 .item:hover,
@@ -411,6 +537,10 @@ h3.title {
 
 .item:hover .actions {
 	display: block;
+}
+
+.all-manufacturers {
+	padding: 10px 69px;
 }
 
 .manufacturers:active {
