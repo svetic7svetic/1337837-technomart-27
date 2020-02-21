@@ -55,12 +55,8 @@ a {
 /*----Сеточные линии----*/
 
 
-.main-header-logo img{
+.main-logo img{
 	box-shadow: 0 5px 1px rgb(181,41,51);
-}
-
-.main-header-logo {
-	position:absolute;
 }
 
 .main-header {
@@ -81,10 +77,9 @@ a {
 }
 
 .shop-navigation {
-	position: relative;
 	display:flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: space-between;
 	font-size: 17px;
 	line-height: 18px;
 	background-color: rgb(41,52,73);
@@ -101,7 +96,6 @@ a {
 
 .shop-search{
 	display: flex;
-	margin-left: 300px;
 }
 
 .info-navigation {
@@ -331,6 +325,7 @@ a.sign-in {
 	width: 300px;
 	margin-bottom: 20px;
 	position: relative;
+	overflow: hidden;
 }	
 
 .popular{
@@ -553,13 +548,39 @@ h3.title {
 	margin-top: 65px;
 }
 
-.serviсes h2 {
-	font-size: 30px;
-	text-transform: uppercase;
-	font-weight: normal;
+.serviсes {
+	padding-top: 65px;
 }
 
-.slider-service h2 {
+ {
+	font-size: 36px;
+	line-height: 36px;
+	color: rgb(50,66,92);
+}
+
+.delivery {
+	background-image: url(../img/icons/bg-delivery.png);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+}
+
+.guarantee {
+	background-image: url(../img/icons/bg-guarantee.png);
+	background-repeat: no-repeat;
+	background-position: 100% 0;	
+}
+
+.credit {
+	background-image: url(../img/icons/bg-credit.png);
+	background-repeat: no-repeat;
+	background-position: 100% 0;	
+}
+
+.request {
+	padding: 10px 40px;
+}
+
+.font-36-36 {
 	font-size: 36px;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -568,28 +589,52 @@ h3.title {
 
 .about-us{
 	display: flex;
+	padding: 80px 0;
+	justify-content: space-between;
 }
 
-.about-us h2 {
+.font-30-30 {
 	font-size: 30px;
 	text-transform: uppercase;
 	font-weight: normal;
+	line-height: 30px;
+	margin: 0;
 }
 
-.about-us p {
+.font-13-24 {
 	font-size: 13px;
 	font-family: "PT Sans", "Arial", sans-serif;
+	line-height: 24px;
+	padding: 0;
+	margin: 20px 0;
 }
 
 .partners {
-	margin-left: 36px;
+	padding-left: 35px;
 	font-size: 18px;
 	font-weight: normal;
+	line-height: 20px;
+}
 
+.partners li {
+	padding-bottom: 20px;
 }
 
 .partners a{
 	color: #000;
+}
+
+.more-details {
+	padding: 10px 40px;
+}
+
+.write-us {
+	padding: 10px 68px;
+	border: 0;
+}
+
+.mini-map {
+	margin: 30px 0;
 }
 
 /*----Подвал----*/	
@@ -607,6 +652,7 @@ footer {
 
 .footer-background	{
 	background-color: rgb(50,66,92);
+
 }
 
 .footer-navigation {
@@ -635,11 +681,16 @@ footer {
 }
 
 .footer-navigation a {
-	color: #ffffff;
+	color: rgb(241,245,247);
 }
 
-.footer-info a{
-	color: rgb(255,209,128);
+.footer-navigation a:hover {
+	text-decoration: underline;
+}
+
+.footer-navigation a:active {
+	text-decoration: none;
+	opacity: 0.5;
 }
 
 .footer-items-navigation a {
@@ -647,9 +698,69 @@ footer {
 	padding-left: 60px;
 }
 
+.footer-items-navigation a:hover {
+	text-decoration: underline;
+}
+
+.footer-items-navigation a:active {
+	text-decoration: none;
+	opacity: 0.5;
+}
+
 .footer-info{
 	display:flex;
 	justify-content: space-between;
-	height: 107px;
 	align-items: center;
+	margin: 0 auto;
+}
+
+.footer-info p {
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.footer-info a{
+	color: rgb(255,209,128);
+}
+
+.footer-info a:hover {
+	text-decoration: underline;
+}
+
+.footer-info a:active {
+	text-decoration: none;
+	color: rgb(238,54,67);
+}
+
+.social ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0 auto;
+	width: 134px;
+
+}
+
+.social-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 42px;
+	height: 42px;
+	margin-bottom: 10px;
+	background-color: rgb(33,42,58);
+	border-radius: 20px;
+}
+
+.social-button:hover,
+.social-button:active {
+	background-color: rgb(238,54,67);
+}
+
+.callback {
+	display: flex;
+	justify-content: space-between;
 }
