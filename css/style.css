@@ -130,7 +130,7 @@ a {
 
 }
 
-.telephone a:before {
+.telephone a::before {
 	content: "";
 	position: absolute;
 	top: 10px;
@@ -174,7 +174,7 @@ a.sign-in {
 	margin-right: 5px;
 }
 
-.sign-in:before {
+.sign-in::before {
 	content: "";
 	position: absolute;
 	width: 20px;
@@ -454,7 +454,7 @@ h3.title {
  	position: relative;
 }
 
-.item .price:after {
+.item .price::after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -512,7 +512,7 @@ h3.title {
 	position: relative;
 }
 
-.buy:before {
+.buy::before {
 	content: "";
 	position: absolute;
 	width: 15px;
@@ -726,11 +726,11 @@ footer {
 	color: rgb(241,245,247);
 }
 
-.footer-navigation a:hover {
+.footer-navigation li:hover {
 	text-decoration: underline;
 }
 
-.footer-navigation a:active {
+.footer-navigation li:active {
 	text-decoration: none;
 	opacity: 0.5;
 }
@@ -917,4 +917,59 @@ footer {
 .modal-map {
 	width: 940px;
 	height: 445px;
+}
+
+.modal-cart {
+	width: 620px;
+	border-top: 7px solid rgb(255,82,87);
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper-cart {
+	display: flex;
+	justify-content: space-between;
+	padding: 37px 80px;
+	background-color: rgb(241,241,241);
+	width: 100%;
+}
+
+.checkout {
+	padding: 10px 60px;
+	border: 0;
+}
+
+.shopping {
+	padding: 10px 45px;
+	border: 0;
+	background-color: rgb(255,255,255);
+	border-radius:3px; 
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Cuprum", "Arial", sans-serif;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: black;
+}
+
+.modal-cart p {
+	font-size: 30px;
+	line-height: 30px;
+	margin: 0;
+	padding-top: 75px;
+	padding-bottom: 65px;
+	position: relative;
+	padding-left: 180px;
+}
+
+.modal-cart p::before {
+	content: "";
+	position: absolute;
+	width: 66px;
+	height: 66px;
+	top: 60px;
+	left: 80px;
+	background-image: url("../img/icons/icon-ok.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
