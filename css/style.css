@@ -50,8 +50,6 @@ a {
 
 
 
-
-
 /*----Сеточные линии----*/
 
 
@@ -373,6 +371,7 @@ a.sign-in {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 14px;
+	font-family: Cuprum, Arial, sans-serif;
 	
 } 
 
@@ -632,6 +631,8 @@ h3.title {
 	font-weight: normal;
 	line-height: 30px;
 	margin: 0;
+	font-family: Cuprum, Arial, sans-serif;
+
 }
 
 .font-13-24 {
@@ -640,6 +641,7 @@ h3.title {
 	line-height: 24px;
 	padding: 0;
 	margin: 20px 0;
+	text-transform: none;
 }
 
 .partners {
@@ -682,6 +684,13 @@ h3.title {
 	margin: 30px 0;
 }
 /*----Каталог----*/
+
+.inner-page {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
+}
 
 .catalog {
 	display: flex;
