@@ -622,6 +622,18 @@ h3.title {
 
 .partners li {
 	padding-bottom: 20px;
+	list-style: none;
+	position: relative;
+}
+
+.partners li::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: -35px;
+	width: 25px;
+	height: 2px;
+	background-color: rgb(238,54,67);
 }
 
 .partners a{
