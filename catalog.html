@@ -77,7 +77,7 @@
 		<main class="inner-page">
 			<section class="container">
 				<div>
-					<ul>
+					<ul class="breadcrumbs">
 						<li><a href="index.html"></a></li>
 						<li><a href="#">Каталог</a></li>
 						<li><a href="#">Инструменты</a></li>
@@ -91,11 +91,25 @@
 			<section class="container catalog">
 				<section class="filters">
 					<h2 class="visually-hidden">Фильтры товаров</h2>
-					<h3>Фильтр:</h3>
-					<h3>Цена:</h3>
-					<!--Здесь будет форма-->
-					<form class="" method="get" action="">
-						<fieldset>	<!--Фильтр производителей-->
+					<div>
+						<p><strong>Фильтр:</strong></p>
+					</div>
+					<form class="" method="get" action=""> 	<!--Фильтры-->
+						<fieldset>
+							<legend>Цена:</legend>
+							
+
+								<div class="range-controls">
+       								<div class="scale">
+        								<div class="bar"></div>
+       								</div>
+       								<div class="range-toggle range-toggle-min"></div>
+        							<div class="range-toggle range-toggle-max"></div>
+     							</div>
+
+
+						</fieldset>
+						<fieldset>
 							<legend>Производители:</legend>
 							<ul>
 								<li>
@@ -138,14 +152,14 @@
 				</section>
 				<section> 
 					<div class="sorting"> <!--Сортировка товаров-->
-						<h3>Сортировка:</h3>
+						<p><strong>Сортировка:</strong></p>
 						<ul>
 							<li>По цене</li>
 							<li>По типу</li>
 							<li>По функционалу</li>
 						</ul>
-						<div>Стрелка вверх</div>
-						<div>Стрелка вниз</div>
+						<div class="visually-hidden">Стрелка вверх</div>
+						<div class="visually-hidden">Стрелка вниз</div>
 					</div>
 					<div> <!--Список перфораторов-->
 						<h2 class="visually-hidden">Список перфораторов</h2>
@@ -283,7 +297,7 @@
 				</section>
 			</section>
 			<article class="wrapper">
-				<div class="container">
+				<div class="some-words container">
 					<h2 class="font-30-30">Пара слов о перфораторах</h2>
 					<p class="font-13-24">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
 						Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>

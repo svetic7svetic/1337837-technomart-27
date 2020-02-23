@@ -199,10 +199,6 @@ a.sign-in {
 	opacity: 0.3;
 }
 
-
-
-
-
 .site-navigation {
 	display:flex;
 	justify-content: space-around;
@@ -697,6 +693,84 @@ h3.title {
 	justify-content: space-between;
 }
 
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs a {
+	list-style: none;
+	color: black;
+}
+
+/*----Фильтр цены----*/
+
+.range-controls {
+	position: relative;
+	padding: 39px 20px;
+	background-color: rgb(247,243,236);
+	border-radius: 5px;
+}
+
+.scale {
+	width: 180px;
+	height: 2px;
+	background: rgb(215,220,222);
+
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: rgb(0,202,116);
+}
+
+.range-toggle {
+	cursor: pointer;
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: rgb(171,171,171);
+	border: 11px solid white;
+	border-radius: 50%;
+	top: 29px;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+}
+
+.range-toggle-min {
+	left: 20px;
+}
+
+.range-toggle-max {
+	left: 70%;
+}
+
+.filters {
+	margin-right: 20px;
+}
+
+.filters p {
+	padding: 10px 15px;
+	margin: 0;
+	width: 100%;
+	background-color: rgb(247,243,236);
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.filters fieldset {
+	border: none;
+	font-size: 15px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.filters legend {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
 .filters ul {
 	padding: 0;
 }
@@ -705,16 +779,36 @@ h3.title {
 	list-style: none;
 }
 
+/*--------*/
+
 .sorting {
 	display: flex;
+	background-color: rgb(247,243,236);
+	border-radius: 5px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.sorting p {
+	margin: 0;
+	padding: 10px 15px;
 }
 
 .sorting ul {
 	list-style: none;
 	display: flex;
+	margin: 0;
 }
 
+.sorting li {
+	padding-left: 35px;
+	padding-right: 35px;
+}
 
+.some-words {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
 
 /*----Подвал----*/	
 
@@ -911,10 +1005,6 @@ footer {
 .callback-form textarea:focus {
 	outline: none;
 	border: 2px solid rgb(238,54,67);
-}
-
-.send {
-
 }
 
 .send button{
