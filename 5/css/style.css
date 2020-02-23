@@ -682,10 +682,7 @@ h3.title {
 /*----Каталог----*/
 
 .inner-page {
-	font-size: 13px;
-	line-height: 18px;
-	font-family: "PT Sans", "Arial", sans-serif;
-	text-transform: uppercase;
+
 }
 
 .catalog {
@@ -695,6 +692,10 @@ h3.title {
 
 .breadcrumbs {
 	list-style: none;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
 }
 
 .breadcrumbs a {
@@ -746,6 +747,10 @@ h3.title {
 
 .filters {
 	margin-right: 20px;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
 }
 
 .filters p {
@@ -787,6 +792,10 @@ h3.title {
 	border-radius: 5px;
 	align-items: center;
 	margin-bottom: 20px;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
 }
 
 .sorting p {
