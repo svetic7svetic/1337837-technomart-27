@@ -78,7 +78,20 @@
 			<section class="container">
 				<div>
 					<ul class="breadcrumbs">
-						<li><a href="index.html"></a></li>
+						<li><a href="index.html">
+							<svg  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="15px" height="12px" viewBox="0 0 15 12" enable-background="new 0 0 15 12" xml:space="preserve">
+								<g>
+								<polygon fill="#C1C6CE" points="3,8 3,12 7,12 7,8 9,8 9,12 13,12 13,8 8,3.516 	"/>
+								<path fill="#C1C6CE" d="M14.831,6.365L13,4.751V0h-2v2.987L8.332,0.635c-0.02-0.017-0.043-0.023-0.064-0.037
+								c-0.026-0.018-0.052-0.035-0.08-0.047C8.156,0.539,8.125,0.533,8.093,0.527C8.062,0.521,8.032,0.515,8,0.515
+								c-0.031,0-0.061,0.006-0.092,0.012C7.875,0.533,7.845,0.539,7.813,0.552C7.785,0.563,7.76,0.581,7.733,0.598
+								c-0.021,0.014-0.045,0.02-0.064,0.037l-6.498,5.73C0.964,6.548,0.944,6.864,1.126,7.071C1.225,7.183,1.363,7.24,1.501,7.24
+								c0.118,0,0.236-0.041,0.331-0.125L8,1.677l6.169,5.438C14.265,7.199,14.383,7.24,14.5,7.24c0.139,0,0.276-0.058,0.375-0.169
+								C15.058,6.864,15.038,6.548,14.831,6.365z"/>
+								</g>
+							</svg>
+						</a></li>
 						<li><a href="#">Каталог</a></li>
 						<li><a href="#">Инструменты</a></li>
 						<li>Перфораторы</li>
@@ -107,29 +120,34 @@
         							<div class="range-toggle range-toggle-max"></div>
      							</div>
 
+     							<div class="price-controls">
+      								<label class="min-price"><input type="number" name="min-price" value="0"></label>
+      								<label class="max-price"><input type="number" name="max-price" value="30000"></label>
+     							</div>
+
 
 						</fieldset>
 						<fieldset>
 							<legend>Производители:</legend>
 							<ul>
-								<li>
-									<input type="checkbox" id="filter-bosch"/>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-bosch"/>
 									<label for="filter-bosch">Bosch</label>
 								</li>
-								<li>
-									<input type="checkbox" id="filter-interscol"/>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-interscol"/>
 									<label for="filter-interscol">Интерскол</label>
 								</li>
-								<li>
-									<input type="checkbox" id="filter-makita"/>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-makita"/>
 									<label for="filter-makita">Makita</label>
 								</li>
-								<li>
-									<input type="checkbox" id="filter-dewalt"/>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-dewalt"/>
 									<label for="filter-dewalt">Dewalt</label>
 								</li>
-								<li>
-									<input type="checkbox" id="filter-hitachi"/>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-hitachi"/>
 									<label for="filter-hitachi">Hitachi</label>
 								</li>
 							</ul>
@@ -137,12 +155,12 @@
 						<fieldset>
 							<legend>Питание:</legend>
 							<ul>
-								<li>
-									<input type="radio" name="battery-type" id="filter-battery"/>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input-radio" type="radio" name="battery-type" id="filter-battery"/>
 									<label for="filter-battery">Аккумуляторные</label>
 								</li>
-								<li>
-									<input type="radio" name="battery-type" id="filter-mains-power"/>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input-radio" type="radio" name="battery-type" id="filter-mains-power"/>
 									<label for="filter-mains-power">Сетевые</label>
 								</li>
 							</ul>
@@ -154,12 +172,14 @@
 					<div class="sorting"> <!--Сортировка товаров-->
 						<p><strong>Сортировка:</strong></p>
 						<ul>
-							<li>По цене</li>
-							<li>По типу</li>
-							<li>По функционалу</li>
+							<li><span>По цене</span></li>
+							<li><span>По типу</span></li>
+							<li><span>По функционалу</span></li>
+							<li>
+								<div class="row-up"></div>
+								<div class="row-down"></div>
+							</li>
 						</ul>
-						<div class="visually-hidden">Стрелка вверх</div>
-						<div class="visually-hidden">Стрелка вниз</div>
 					</div>
 					<div> <!--Список перфораторов-->
 						<h2 class="visually-hidden">Список перфораторов</h2>
@@ -287,11 +307,11 @@
 						</ul>
 					</div>
 					<div>
-						<ul>
-							<li><a>1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">Следующая</a></li>
+						<ul class="pagination-list">
+							<li class="pagination-item pagination-item-current"><a>1</a></li>
+							<li class="pagination-item"><a href="#">2</a></li>
+							<li class="pagination-item"><a href="#">3</a></li>
+							<li class="pagination-item"><a href="#">Следующая</a></li>
 						</ul>
 					</div>
 				</section>
