@@ -326,9 +326,14 @@ a.sign-in {
 	overflow: hidden;
 }	
 
-.slider {
-	position: relative;
 
+/*----Слайдер начало----*/
+
+
+.slider {
+  width: 620px;
+  background-color: black;
+  position: relative;
 }
 
 .slider a{
@@ -356,6 +361,60 @@ a.sign-in {
 	color: rgb(255,255,255);	
 	text-shadow: 2px 2px 5px #111;
 }
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slider-slides {
+  width: 200%;
+  transition: transform 0.5s ease;
+  display: flex;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 35px;
+  left: 47%;
+  z-index: 1;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.slide {
+  position: relative;
+}
+
+#product-1:checked ~ .slider-controls label[for="product-1"],
+#product-2:checked ~ .slider-controls label[for="product-2"]{
+  background-color: rgb(238,54,67);
+}
+
+
+#product-1:checked ~ .slider-inner .slider-slides {
+  transform: translate(0);
+}
+
+#product-2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-620px);
+}
+
+/*----Слайдер конец----*/
 
 .popular{
 	display: flex;
@@ -606,7 +665,7 @@ h3.title {
 	padding: 10px 40px;
 }
 
-.font-36-36 {
+.large {
 	font-size: 36px;
 	line-height: 36px;
 	text-transform: uppercase;
@@ -620,7 +679,7 @@ h3.title {
 	justify-content: space-between;
 }
 
-.font-30-30 {
+.big {
 	font-size: 30px;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -630,7 +689,7 @@ h3.title {
 
 }
 
-.font-13-24 {
+.small {
 	font-size: 13px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	line-height: 24px;
