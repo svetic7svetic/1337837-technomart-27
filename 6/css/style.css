@@ -50,11 +50,11 @@ a {
 
 
 
-/*----Сеточные линии----*/
+/*----Хедер----*/
 
 
 .main-logo img{
-	box-shadow: 0 5px 1px rgb(181,41,51);
+	box-shadow: 0 5px 0 rgb(181,41,51);
 }
 
 .main-logo:hover {
@@ -80,8 +80,7 @@ a {
 
 .shop-navigation {
 	display:flex;
-	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	font-size: 17px;
 	line-height: 18px;
 	background-color: rgb(41,52,73);
@@ -91,14 +90,69 @@ a {
 .user-navigation {
 	display:flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 100%;
 	margin: 0px;
-	padding: 12px;
+	padding: 0px;
 }
 
 .shop-search{
 	display: flex;
+	position: relative;
 }
+
+.shop-search input {
+	border: 0;
+}
+
+.user-navigation-bookmarks {
+	position: relative;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 44px;
+	padding-right: 28px;
+}
+.user-navigation-cart{
+	position:relative;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 49px;
+	padding-right: 31px;
+}
+
+.user-navigation-checkout {
+	padding: 12px 20px;
+	background-color: rgb(99,166,62);
+}
+
+.user-navigation-bookmarks::before {
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: 17px;
+	background-image: url("../img/icons/icon-bookmark.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 14px;
+	height: 16px;
+	opacity: 0.3;
+}
+
+.user-navigation-cart::before {
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: 17px;
+	background-image: url("../img/icons/cart-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 15px;
+	height: 15px;
+	opacity: 0.3;
+}
+
+
+
 
 .info-navigation {
 	display:flex;
