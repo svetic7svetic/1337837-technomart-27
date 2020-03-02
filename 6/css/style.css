@@ -57,11 +57,6 @@ a {
 	box-shadow: 0 5px 0 rgb(181,41,51);
 }
 
-.main-logo:hover,
-.main-logo:focus {
-
-}
-
 .main-header {
 	background-color: rgb(243,247,248);
 }
@@ -89,9 +84,7 @@ a {
 
 .user-navigation {
 	display:flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 100%;
 	margin: 0px;
 	padding: 0px;
 }
@@ -104,11 +97,13 @@ a {
 .shop-search{
 	display: flex;
 	position: relative;
+	flex-grow: 1;
 }
 
 .shop-search input {
 	border: 0;
-	width: 270px;
+	width:100%;
+	
 }
 
 .shop-search-button {
@@ -714,7 +709,8 @@ h3.title {
 }
 
 .item:hover,
-.manufacturers:hover {
+.manufacturers:hover,
+.manufacturers:focus {
 	border: 1px solid white;
 	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
@@ -744,29 +740,112 @@ h3.title {
 	padding-top: 65px;
 }
 
-.delivery {
+/*-Слайдер на услуги-*/
+.slider-service-slides h2 {
+	padding: 0px;
+	margin: 0px;
+}
+
+.delivery-slide {
+	height: 100%;
 	background-image: url(../img/icons/bg-delivery.png);
 	background-repeat: no-repeat;
-	background-position: 100% 0;
+	background-position: 100% bottom;
 }
 
-.guarantee {
+.guarantee-slide {
+	height: 100%;
 	background-image: url(../img/icons/bg-guarantee.png);
 	background-repeat: no-repeat;
-	background-position: 100% 0;	
+	background-position: 100% bottom;	
 }
 
-.credit {
+.credit-slide {
+	height: 100%;
 	background-image: url(../img/icons/bg-credit.png);
 	background-repeat: no-repeat;
-	background-position: 100% 0;	
+	background-position: 100% bottom;
+}
+
+.slider-service {
+	margin-top: 65px;
+	display: flex;
+
+}
+
+.slider-service-slides {
+	flex-grow: 1;
+	padding-left: 80px;
+}
+
+
+.slider-service-controls {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+ 	background-color: rgb(50,66,92);
+ 	justify-content: center;
+ 	margin-bottom: 99px;
+}
+
+.slider-service-controls label {
+	font-family: Cuprum, Arial, sans-serif;
+	background-color: #ffffff;
+	font-size: 21px;
+ 	font-weight: bold;
+ 	color: white;
+ 	background-color: rgb(50,66,92);
+ 	padding: 22px;
+ 	padding-right: 140px;
+ 	border-top: 1px solid rgb(64,80,105);
+ 	border-bottom: 1px solid rgb(41,52,73);
+}
+
+#serviсe-1:checked ~ .slider-service-controls label[for="serviсe-1"],
+#serviсe-2:checked ~ .slider-service-controls label[for="serviсe-2"],
+#serviсe-3:checked ~ .slider-service-controls label[for="serviсe-3"] {
+	background-color: white;
+	color: rgb(50,66,92);
+	border: none;
+}
+
+.service-slide {
+	display: none;
+}
+
+#serviсe-1:checked ~ .slider-service-slides .delivery-slide {
+	display: block;
+}
+
+#serviсe-2:checked ~ .slider-service-slides .guarantee-slide {
+	display: block;	
+}
+
+#serviсe-3:checked ~ .slider-service-slides .credit-slide{
+	display:block;	
+}
+
+.slider-service-controls label:nth-child(2)::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 279px;
+	background-image: url("../img/icons/service-shadow.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	top: -48px;
+	right: 0;
+	opacity: 0.3;
 }
 
 .request {
 	padding: 10px 40px;
+	display: inline-block;
+	margin-top: 15px;
 }
 
 .large {
+	font-family: Cuprum, Arial, sans-serif;
 	font-size: 36px;
 	line-height: 36px;
 	text-transform: uppercase;
@@ -1014,6 +1093,7 @@ h3.title {
 	background: none;
 	border: none;
 	padding: 10px 0;
+	padding-left: 15px;
 
 }
 
@@ -1046,7 +1126,7 @@ h3.title {
 
 }
 
-.filters fieldset:not(:last-child) {
+.filters fieldset:not(:last-of-type) {
 	border-bottom: 1px solid rgb(229,229,229);
 }
 
@@ -1133,8 +1213,8 @@ h3.title {
 .filter-input-radio:checked + label::after {
 	content: "";
 	position: absolute;
-	width: 8px;
-	height: 8px;
+	width: 9px;
+	height: 9px;
 	background-color: rgb(181,181,181);
 	top: 6px;
 	left: -27px;
