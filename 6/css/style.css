@@ -469,7 +469,7 @@ a.sign-in {
 
 .slider-controls {
   position: absolute;
-  bottom: 35px;
+  bottom: 30px;
   left: 47%;
   z-index: 1;
 }
@@ -514,7 +514,7 @@ a.sign-in {
 	background-color: rgb(249,245,240);
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 14px;
+	margin-bottom: 20px;
 	font-family: Cuprum, Arial, sans-serif;
 	
 } 
@@ -522,7 +522,7 @@ a.sign-in {
 .popular h2{
 	color: rgb(50,66,92);
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: normal;
 }
@@ -538,7 +538,6 @@ a.sign-in {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
 	line-height: 20px;
-	margin-bottom: 30px;
 }	
 
 
@@ -579,20 +578,22 @@ a.sign-in {
 
 h3.title {
 	margin: 0;
-	padding: 12px;
+	padding: 8px;
+	font-size: 18px;
 }
 
 .discount {
 	min-height: 20px;
-	margin-bottom: 8px;
+	margin-top: 3px;
+	margin-bottom: 9px;
 	color: #999;
 	text-decoration: line-through;
 }
 
 .price {
  	margin: 0 40px;
-	margin-bottom: 20px;
- 	padding: 10px 0;
+ 	margin-bottom: 20px;
+ 	padding: 9px 0;
 	color: white;
  	background: rgb(238,54,67);
  	border-radius: 3px;
@@ -604,7 +605,7 @@ h3.title {
 	position: absolute;
 	top: 0;
 	right: -20px;
-	border: 20px solid white;
+	border: 19px solid white;
 	border-left-color: rgb(238,54,67);
 }
 
@@ -737,7 +738,12 @@ h3.title {
 }
 
 .serviсes {
-	padding-top: 65px;
+	padding-top: 61px;
+}
+
+.serviсes p {
+	margin: 25px 0;
+
 }
 
 /*-Слайдер на услуги-*/
@@ -768,7 +774,7 @@ h3.title {
 }
 
 .slider-service {
-	margin-top: 65px;
+	margin-top: 70px;
 	display: flex;
 
 }
@@ -792,10 +798,13 @@ h3.title {
 	font-family: Cuprum, Arial, sans-serif;
 	background-color: #ffffff;
 	font-size: 21px;
+	line-height: 30px;
  	font-weight: bold;
  	color: white;
  	background-color: rgb(50,66,92);
- 	padding: 22px;
+ 	padding-top: 15px;
+ 	padding-left:22px;
+ 	padding-bottom:15px;
  	padding-right: 140px;
  	border-top: 1px solid rgb(64,80,105);
  	border-bottom: 1px solid rgb(41,52,73);
@@ -855,8 +864,13 @@ h3.title {
 
 .about-us{
 	display: flex;
-	padding: 80px 0;
+	padding-top: 80px;
+	padding-bottom: 86px;
 	justify-content: space-between;
+}
+
+.about-us h2 {
+	padding-bottom: 25px;
 }
 
 .big {
@@ -873,16 +887,18 @@ h3.title {
 	font-size: 13px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	line-height: 24px;
-	padding: 0;
-	margin: 20px 0;
 	text-transform: none;
+	margin: 0;
 }
 
 .partners {
 	padding-left: 35px;
+	font-family: Cuprum, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 20px;
+	margin-top: 22px;
+	margin-bottom: 25px;
 }
 
 .partners li {
@@ -894,7 +910,7 @@ h3.title {
 .partners li::before {
 	content: "";
 	position: absolute;
-	top: 8px;
+	top: 9px;
 	left: -35px;
 	width: 25px;
 	height: 2px;
@@ -906,7 +922,7 @@ h3.title {
 }
 
 .more-details {
-	padding: 10px 40px;
+	padding: 11px 40px;
 }
 
 .write-us {
@@ -915,7 +931,8 @@ h3.title {
 }
 
 .mini-map {
-	margin: 30px 0;
+	margin-top: 32px;
+	margin-bottom: 40px;
 }
 /*----Каталог----*/
 
