@@ -391,7 +391,7 @@
 			</section>
 		</footer>
 		<section class="modal modal-callback">	<!--Форма обратной связи-->
-			<h2 class="visually-hidden">Напишите нам</h2>
+			<h2 class="visually-hidden">Напишите нам!</h2>
 			<form action="https://echo.htmlacademy.ru" method="post">
 				<div class="callback-form">	
 					<div>
@@ -414,9 +414,73 @@
 			<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 		</section>
 		<section class="modal modal-map">	<!--Карта для проезда-->
-			<h2 class="visually-hidden">Как до нас добраться</h2>
+			<h2 class="visually-hidden">Как до нас добраться!</h2>
 			<img src="map.png" width="940" height="450" alt="Магазин по адресу г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8">
 			<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 		</section>
+		<section class="modal modal-cart">	<!--Товар добавлен в корзину-->
+			<div>
+				<p>Товар добавлен в корзину!</p>
+			</div>
+			<div class="wrapper-cart">
+				<button class="checkout button--red" type="button">Оформить заказ</button>
+				<button class="shopping" type="button">Продолжить покупки</button>
+			</div>
+				<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+		</section>
+
+		<!--Callback-->
+		<script src="js/callback.js"></script>
+		
+		<!--Map-->
+		<script>
+			var maplink = document.querySelector(".mini-map");
+
+			var mappopup = document.querySelector(".modal-map");
+			var mapclose = mappopup.querySelector(".modal-close");
+
+			maplink.addEventListener("click", function (evt){
+				mappopup.classList.add("modal-show");
+			});
+
+			mapclose.addEventListener("click", function (evt){
+				evt.preventDefault();
+				mappopup.classList.remove("modal-show");
+			});
+
+			window.addEventListener("keydown", function (evt) {
+				if (evt.keyCode === 27) {
+					evt.preventDefault();
+					if (mappopup.classList.contains("modal-show")){
+						mappopup.classList.remove("modal-show");
+					}
+				}
+			});
+		</script>
+
+		<!--Cart-->
+		<script>
+			var cartlink = document.querySelector(".buy");
+			var cartpopup = document.querySelector(".modal-cart");
+			var cartclose = cartpopup.querySelector(".modal-close");
+
+			cartlink.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				console.log("Клип по ссылке на покупку");
+				cartpopup.classList.add("modal-show");
+			});
+			cartclose.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				cartpopup.classList.remove("modal-show");
+			});
+			window.addEventListener("keydown", function (evt) {
+				if (evt.keyCode === 27) {
+					evt.preventDefault();
+					if (cartpopup.classList.contains("modal-show")){
+						cartpopup.classList.remove("modal-show");
+					}
+				}
+			});
+		</script>
 	</body>
 </html>

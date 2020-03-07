@@ -1604,17 +1604,58 @@ footer {
 
 /*----модальные окна----*/
 
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+
+	70% {
+		transform: translateY(30px);
+	}
+
+	90% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes bounceback {
+	0% {
+		transform: translateY(0);
+	}
+	
+	30% {
+		transform: translateY(30px);
+	}
+
+	100% {
+		transform: translateY(-2000px);
+	}
+
+}
+
+@keyframes shake {
+	0%,	100% {
+		transform: translateX(0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-10px);
+	}
+
+	20%, 40%, 60%, 80% {
+		transform: translateX(10px);
+	}
+}
+
 .modal {
 	position: fixed;
 	z-index: 3;
 	background-color: white;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-}
-
-.modal-callback,
-.modal-map,
-.modal-cart {
-	display: none;
 }
 
 .modal-callback {
@@ -1635,6 +1676,9 @@ footer {
 }
 
 .modal-cart {
+	top: 25%;
+	left: 50%;
+	margin-left: -310px;
 	width: 620px;
 	border-top: 7px solid rgb(255,82,87);
 	display: flex;
@@ -1646,6 +1690,25 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 48px 80px 17px 80px;
+}
+
+.modal-callback,
+.modal-map,
+.modal-cart {
+	display: none;
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
+}
+
+.modal-hide {
+	animation: bounceback 0.6s;
 }
 
 .callback-form div {
@@ -1716,6 +1779,10 @@ footer {
 	top: 9px;
 	right: 9px;
 	background: none;
+}
+
+.modal-close span:focus {
+	outline: none;
 }
 
 .modal-close::before,
