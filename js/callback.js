@@ -25,7 +25,7 @@ callbacklink.addEventListener("click", function (evt){
 		useremail.focus();
 	} else {
 		username.focus();
-		}
+	}
 });
 
 callbackclose.addEventListener("click", function (evt){
@@ -50,8 +50,8 @@ callbackform.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {
-		evt.preventDefault();
 		if (callbackpopup.classList.contains("modal-show")){
+			evt.preventDefault();
 			callbackpopup.classList.remove("modal-show");
 			callbackpopup.classList.remove("modal-error");
 		}
