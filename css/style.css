@@ -234,9 +234,9 @@ a {
 	display:flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	margin-top: 45px;
+	margin-top: 46px;
 	line-height: 23px;
-	margin-bottom: 5px;
+	margin-bottom: 6px;
 }
 
 .info {
@@ -250,6 +250,7 @@ a {
 .telephone {	
 	margin-bottom: 15px;
 	margin-top: 12px;
+	font-size: 21px;
 }
 
 .telephone a {
@@ -892,6 +893,7 @@ h3.title {
 .slider-service-slides h2 {
 	padding: 0px;
 	margin: 0px;
+	margin-top: -3px;
 }
 
 .delivery-slide {
@@ -916,7 +918,7 @@ h3.title {
 }
 
 .slider-service {
-	margin-top: 70px;
+	margin-top: 73px;
 	display: flex;
 
 }
@@ -1010,13 +1012,13 @@ h3.title {
 
 .about-us{
 	display: flex;
-	padding-top: 80px;
+	padding-top: 79px;
 	padding-bottom: 86px;
 	justify-content: space-between;
 }
 
 .about-us h2 {
-	padding-bottom: 25px;
+	padding-bottom: 26px;
 }
 
 .about-company p {
@@ -1048,7 +1050,7 @@ h3.title {
 	font-weight: normal;
 	line-height: 20px;
 	margin-top: 22px;
-	margin-bottom: 25px;
+	margin-bottom: 27px;
 }
 
 .partners li {
@@ -1531,7 +1533,7 @@ footer {
 
 .left-footer-side p {
 	padding-bottom: 50px;
-	padding-top: 32px;
+	padding-top: 33px;
 	padding-left: 3px;
 	margin: 0;
 }
@@ -1608,7 +1610,7 @@ footer {
 
 .footer-info p {
 	margin: 0;
-	padding-top: 37px;
+	padding-top: 38px;
 	padding-bottom: 34px;
 }
 
