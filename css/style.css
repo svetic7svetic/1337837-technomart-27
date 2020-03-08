@@ -6,8 +6,8 @@ body {
 	font-size: 17px;
  	line-height: 18px;
  	font-weight: 400;	
-/*
- 	opacity: 0.7;
+
+ 	opacity: 0.8;
  	background-image: url("../technomart-index.jpg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
@@ -32,7 +32,7 @@ a {
 
 .visually-hidden {
 	position: absolute;
-	clip: rect(1 1 1 1);
+	clip: rect(0 0 0 0);
 	padding: 0;
 	margin: 0;
 	width: 1px;
@@ -154,6 +154,11 @@ a {
 	padding-right: 31px;
 }
 
+.cart-full {
+	background-color: rgb(238,54,67);
+	padding-right: 26px;
+}
+
 .user-navigation-checkout {
 	display: flex;
 	padding: 12px 20px;
@@ -229,20 +234,22 @@ a {
 	display:flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	margin-top: 40px;
+	margin-top: 45px;
 	line-height: 23px;
+	margin-bottom: 5px;
 }
 
 .info {
 	color: rgb(238,54,67);
 	font-size: 16px;
 	font-style: italic;
-	margin-top: 10px;
+	margin-top: 4px;
 	margin-left: 50px;
 }
 
 .telephone {	
 	margin-bottom: 15px;
+	margin-top: 12px;
 }
 
 .telephone a {
@@ -278,10 +285,6 @@ a {
 	text-align: center;
 }
 
-.sign {
-	margin-top: 7px;
-}
-
 .sign-in{
 	background-color: white;
 	font-size: 21px;
@@ -303,6 +306,46 @@ a {
 
 a.sign-in {
 	padding-left: 45px;
+}
+
+.logged-user {
+	display: flex;
+	flex-direction: column;
+}
+
+.logged-user > a {
+	color: black;
+	background-color: white;
+	text-align: center;
+	padding: 11px 68px 11px 46px;
+	font-family: Cuprum, Arial, sans-serif;
+	font-size: 21px;
+ 	line-height: 21px;
+ 	position: relative;
+}
+
+.logged-user > a::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 18px;
+	top: 13px;
+	left: 13px;
+	background-image: url("../img/icons/icon-user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.logged-user > a::after {
+	content: "";
+	position: absolute;
+	width: 21px;
+	height: 17px;
+	top: 14px;
+	right: 10px;
+	background-image: url("../img/icons/icon-logout.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .sign-in::before {
@@ -339,7 +382,7 @@ a.sign-in {
 	display:flex;
 	justify-content: space-around;
 	padding: 0px;
-	margin-top: 23px;
+	margin-top: 19px;
 	margin-bottom: 74px;
 	background-color: rgb(50,66,92);
 	box-shadow: 0 5px 1px rgb(41,52,73);
@@ -354,7 +397,8 @@ a.sign-in {
 
 .site-navigation a {
 	display: block;
-	padding: 18px 30px;
+	padding: 20px 30px;
+	padding-bottom: 17px;
 }
 
 .site-navigation a:hover,
@@ -379,7 +423,8 @@ a.sign-in {
 	line-height: 30px;
 	font-weight: bold;
 	padding-left: 23px;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
+	margin-top: 21px;
 }
 
 .advantages-list {
@@ -491,7 +536,7 @@ a.sign-in {
 .slider h2 {
 	position: absolute;
 	margin: 0;
-	top: 25px;
+	top: 23px;
 	left: 25px;
 	color: rgb(255,255,255);
 }
@@ -499,7 +544,7 @@ a.sign-in {
 .slider p {
 	position:absolute;
 	margin: 0;
-	top: 63px;
+	top: 61px;
 	left: 25px;
 	font-size: 18px;
 	line-height: 24px;
@@ -640,7 +685,7 @@ a.sign-in {
 
 .popular-list li {
 	border: 1px solid rgb(234,234,234);
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 .button--red {
@@ -827,7 +872,7 @@ h3.title {
 
 /*----*/
 .background-services {
-	margin-top: 65px;
+	margin-top: 70px;
 }
 
 .wrapper {
@@ -1205,6 +1250,13 @@ h3.title {
 .max-price {
 	background-color: rgb(247,243,236);
 	border-radius: 5px;
+	position: relative;
+}
+
+.max-price::before {
+	content: "";
+	position: absolute;
+
 }
 
 .price-controls input {
@@ -1216,10 +1268,7 @@ h3.title {
 	border: none;
 	padding: 10px 0;
 	padding-left: 15px;
-
 }
-
-
 
 .filters {
 	margin-right: 20px;
@@ -1306,9 +1355,10 @@ h3.title {
 	background-image: url("../img/icons/checkbox-off.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	opacity: 0.7;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
 	content: "";
 	position: absolute;
 	width: 27px;
@@ -1318,6 +1368,7 @@ h3.title {
 	background-image: url("../img/icons/checkbox-on.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	opacity: 0.7;
 }
 
 .filter-input-radio + label::before {
@@ -1327,9 +1378,9 @@ h3.title {
 	height: 25px;
 	top: -2px;
 	left: -35px;
-	background-image: url("../img/icons/radio-off.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+	border: 4px solid rgb(181,181,181);
+	border-radius: 50%;
+	opacity: 0.7;
 }
 
 .filter-input-radio:checked + label::after {
@@ -1341,16 +1392,22 @@ h3.title {
 	top: 6px;
 	left: -27px;
 	border-radius: 50%;
+	opacity: 0.7;
 }
 
-.filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label,
-.filter-input-radio:hover + label,
-.filter-input-radio:focus + label{
-	opacity: 0.8;
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before,
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before,
+.filter-input-radio:hover + label::after,
+.filter-input-radio:focus + label::after{
+	opacity: 1;
 }
 
-
+.filter-input-checkbox:disabled + label,
+.filter-input-radio:disabled + label {
+	opacity: 0.4;
+}
 
 /*--------*/
 
