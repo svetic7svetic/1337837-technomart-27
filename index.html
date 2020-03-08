@@ -431,30 +431,6 @@
 		</section>
 		<script src="js/callback.js"></script><!--Callback-->	
 		<script src="js/map.js"></script><!--Map-->
-
-		<!--Cart-->
-		<script>
-			var cartlink = document.querySelector(".buy");
-			var cartpopup = document.querySelector(".modal-cart");
-			var cartclose = cartpopup.querySelector(".modal-close");
-
-			cartlink.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				console.log("Клип по ссылке на покупку");
-				cartpopup.classList.add("modal-show");
-			});
-			cartclose.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				cartpopup.classList.remove("modal-show");
-			});
-			window.addEventListener("keydown", function (evt) {
-				if (evt.keyCode === 27) {
-					evt.preventDefault();
-					if (cartpopup.classList.contains("modal-show")){
-						cartpopup.classList.remove("modal-show");
-					}
-				}
-			});
-		</script>
+		<script src="js/buy.js"></script><!--Cart-->
 	</body>
 </html>
