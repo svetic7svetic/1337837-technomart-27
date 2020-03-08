@@ -6,7 +6,7 @@ body {
 	font-size: 17px;
  	line-height: 18px;
  	font-weight: 400;	
-
+/*
  	opacity: 0.8;
  	background-image: url("../technomart-index.jpg");
  	background-repeat: no-repeat;
@@ -309,6 +309,19 @@ a.sign-in {
 	padding-left: 45px;
 }
 
+.sign-in::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 14px;
+	left: 10px;
+	background-image: url("../img/icons/icon-login.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.3;
+}
+
 .logged-user {
 	display: flex;
 	flex-direction: column;
@@ -349,18 +362,14 @@ a.sign-in {
 	background-position: 0 0;
 }
 
-.sign-in::before {
-	content: "";
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	top: 14px;
-	left: 10px;
-	background-image: url("../img/icons/icon-login.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	opacity: 0.3;
+.user-menu a{
+	color: rgb(50,66,92);
+	text-decoration: underline;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 0 16px;
 }
+
 .sign-in:hover::before,
 .sign-in:focus::before {
 	opacity: 1;
