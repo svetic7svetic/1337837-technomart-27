@@ -12,7 +12,7 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-	storage = localStorage.getItem("name");
+	storage = localStorage.getItem("username");
 	}	catch (err) {
 		isStorageSupport = false;
 	}
@@ -44,7 +44,6 @@ callbackform.addEventListener("submit", function (evt) {
 	} else {
 		if (isStorageSupport) {
 			localStorage.setItem("username", username.value);
-			console.log("Сохранили имя.");
 		}
 	}
 });
