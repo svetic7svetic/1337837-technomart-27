@@ -1,59 +1,60 @@
-var callbacklink = document.querySelector(".write-us");
+var callbackLink = document.querySelector(".write-us");
 			
-var callbackpopup = document.querySelector(".modal-callback");
-var callbackclose = callbackpopup.querySelector(".modal-close");
+var callbackPopup = document.querySelector(".modal-callback");
+var callbackClose = callbackPopup.querySelector(".modal-close");
 
-var callbackform = callbackpopup.querySelector("form");
-var username = callbackpopup.querySelector("[name=name]");
-var useremail = callbackpopup.querySelector("[name=email]");
-var usermessage = callbackpopup.querySelector("[name=message]");
+var callbackForm = callbackPopup.querySelector("form");
+var userName = callbackPopup.querySelector("[name=name]");
+var userEmail = callbackPopup.querySelector("[name=email]");
+var userMessage = callbackPopup.querySelector("[name=message]");
 
 var isStorageSupport = true;
 var storage = "";
 
 try {
-	storage = localStorage.getItem("username");
-	}	catch (err) {
-		isStorageSupport = false;
-	}
+	storage = localStorage.getItem("userName");
+}	catch (err) {
+	isStorageSupport = false;
+}
 
-callbacklink.addEventListener("click", function (evt){
-	callbackpopup.classList.add("modal-show");
+callbackLink.addEventListener("click", function (evt){
+	evt.preventDefault();
+	callbackPopup.classList.add("modal-show");
 
 	if (storage) {
-		username.value = storage;
-		useremail.focus();
+		userName.value = storage;
+		userEmail.focus();
 	} else {
-		username.focus();
+		userName.focus();
 	}
 });
 
-callbackclose.addEventListener("click", function (evt){
+callbackClose.addEventListener("click", function (evt){
 	evt.preventDefault();
-	callbackpopup.classList.remove("modal-show");
-	callbackpopup.classList.remove("modal-error");
+	callbackPopup.classList.remove("modal-show");
+	callbackPopup.classList.remove("modal-error");
 });
 
-callbackform.addEventListener("submit", function (evt) {
-	if (!username.value || !useremail.value || !usermessage.value) {
+callbackForm.addEventListener("submit", function (evt) {
+	if (!userName.value || !userEmail.value || !userMessage.value) {
 	evt.preventDefault();
-	callbackpopup.classList.remove("modal-error");
-	callbackpopup.offsetWidth = callbackpopup.offsetWidth;
-	callbackpopup.classList.add("modal-error")
+	callbackPopup.classList.remove("modal-error");
+	callbackPopup.offsetWidth = callbackPopup.offsetWidth;
+	callbackPopup.classList.add("modal-error")
 	console.log("Нужжно ввести имя, почту и сообщение.");
 	} else {
 		if (isStorageSupport) {
-			localStorage.setItem("username", username.value);
+			localStorage.setItem("userName", userName.value);
 		}
 	}
 });
 
 window.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {
-		if (callbackpopup.classList.contains("modal-show")){
+		if (callbackPopup.classList.contains("modal-show")){
 			evt.preventDefault();
-			callbackpopup.classList.remove("modal-show");
-			callbackpopup.classList.remove("modal-error");
+			callbackPopup.classList.remove("modal-show");
+			callbackPopup.classList.remove("modal-error");
 		}
 	}
 });
