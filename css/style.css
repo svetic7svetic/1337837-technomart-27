@@ -907,6 +907,10 @@ h3.title {
  	border-bottom: 1px solid rgb(41,52,73);
 }
 
+.slider-service-controls label:hover {
+	background-color: rgb(41,52,73);
+}
+
 #serviсe-1:checked ~ .slider-service-controls label[for="serviсe-1"],
 #serviсe-2:checked ~ .slider-service-controls label[for="serviсe-2"],
 #serviсe-3:checked ~ .slider-service-controls label[for="serviсe-3"] {
