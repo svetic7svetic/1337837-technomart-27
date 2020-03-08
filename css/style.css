@@ -168,7 +168,7 @@ a {
 .user-navigation-bookmarks::before {
 	content: "";
 	position: absolute;
-	top: 14px;
+	top: 12px;
 	left: 17px;
 	background-image: url("../img/icons/icon-bookmark.svg");
 	background-repeat: no-repeat;
@@ -181,7 +181,7 @@ a {
 .user-navigation-cart::before {
 	content: "";
 	position: absolute;
-	top: 14px;
+	top: 12px;
 	left: 17px;
 	background-image: url("../img/icons/cart-icon.svg");
 	background-repeat: no-repeat;
