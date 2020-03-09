@@ -6,8 +6,8 @@ body {
 	font-size: 17px;
  	line-height: 18px;
  	font-weight: 400;	
-/*
- 	opacity: 0.8;
+
+ 	opacity: 0.5;
  	background-image: url("../technomart-index.jpg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
@@ -57,7 +57,8 @@ a {
 
 .header-main-logo{
 	display: block;
-	padding: 10px 56px;
+	padding: 13px 56px;
+	padding-bottom: 10px;
 	background-color: rgb(238,54,67);
 	box-shadow: 0 5px rgb(181,41,51);
 }
@@ -236,21 +237,25 @@ a {
 	justify-content: space-between;
 	margin-top: 46px;
 	line-height: 23px;
-	margin-bottom: 6px;
+}
+
+.info-navigation > div {
+	width: 33%;
 }
 
 .info {
 	color: rgb(238,54,67);
 	font-size: 16px;
 	font-style: italic;
-	margin-top: 4px;
-	margin-left: 50px;
+	margin-top: 3px;
+	margin-left: 52px;
 }
 
 .telephone {	
 	margin-bottom: 15px;
 	margin-top: 12px;
 	font-size: 21px;
+	padding-left: 5px;
 }
 
 .telephone a {
@@ -283,13 +288,17 @@ a {
 .adress {
 	color: rgb(50,66,92);
 	font-size: 14px;
-	text-align: center;
+	padding-left: 14px;
+}
+
+.sign {
+	text-align: right;
 }
 
 .sign-in{
 	background-color: white;
 	font-size: 21px;
-	padding: 11px 26px;
+	padding: 11px 28px;
 }
 
 .sign-up {
@@ -315,7 +324,7 @@ a.sign-in {
 	width: 20px;
 	height: 20px;
 	top: 14px;
-	left: 10px;
+	left: 12px;
 	background-image: url("../img/icons/icon-login.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -348,6 +357,7 @@ a.sign-in {
 	background-image: url("../img/icons/icon-user.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	opacity: 0.3;
 }
 
 .logged-user > a::after {
@@ -360,6 +370,22 @@ a.sign-in {
 	background-image: url("../img/icons/icon-logout.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	opacity: 0.3;
+}
+
+.my-account {
+	position: relative;
+}
+
+.my-account::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: -3px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: rgb(50,66,92);
 }
 
 .user-menu a{
@@ -371,20 +397,26 @@ a.sign-in {
 }
 
 .sign-in:hover::before,
-.sign-in:focus::before {
+.sign-in:focus::before,
+.logged-user > a:hover::before,
+.logged-user > a:hover::after {
 	opacity: 1;
 }
 
 .sign-in:hover,
 .sign-in:focus,
 .sign-up:hover,
-.sign-up:focus {
+.sign-up:focus,
+.user-menu a:hover,
+.user-menu a:focus {
 	color: rgb(238,54,67);
 }
 
 .sign-in:active::before,
 .sign-in:active,
-.sign-up:active {
+.sign-up:active,
+.user-menu a:active,
+.logged-user > a:active {
 	opacity: 0.3;
 }
 
@@ -392,7 +424,7 @@ a.sign-in {
 	display:flex;
 	justify-content: space-around;
 	padding: 0px;
-	margin-top: 19px;
+	margin-top: 24px;
 	margin-bottom: 74px;
 	background-color: rgb(50,66,92);
 	box-shadow: 0 5px 1px rgb(41,52,73);
@@ -1021,8 +1053,8 @@ h3.title {
 
 .about-us{
 	display: flex;
-	padding-top: 79px;
-	padding-bottom: 86px;
+	padding-top: 77px;
+	padding-bottom: 85px;
 	justify-content: space-between;
 }
 
@@ -1058,8 +1090,8 @@ h3.title {
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 20px;
-	margin-top: 22px;
-	margin-bottom: 27px;
+	margin-top: 21px;
+	margin-bottom: 25px;
 }
 
 .partners li {
@@ -1087,8 +1119,9 @@ h3.title {
 }
 
 .write-us {
-	padding: 10px 59px 10px 65px;
+	padding: 10px 0;
 	border: 0;
+	width: 100%;
 }
 
 .mini-map {
@@ -1619,7 +1652,7 @@ footer {
 
 .footer-info p {
 	margin: 0;
-	padding-top: 38px;
+	padding-top: 36px;
 	padding-bottom: 34px;
 }
 
