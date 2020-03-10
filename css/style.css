@@ -253,7 +253,7 @@ a {
 }
 
 .telephone {	
-	margin-bottom: 18px;
+	margin-bottom: 16px;
 	margin-top: 12px;
 	font-size: 21px;
 	padding-left: 5px;
@@ -289,6 +289,7 @@ a {
 .adress {
 	color: rgb(50,66,92);
 	font-size: 14px;
+	line-height: 24px;
 	padding-left: 14px;
 }
 
@@ -1143,7 +1144,7 @@ h3.title {
 
 
 .item-list {
-	margin-bottom: 35px;
+	margin-bottom: 37px;
 }
 
 .catalog {
@@ -1214,7 +1215,7 @@ h3.title {
 }
 
 .pagination-item {
-	margin-right: 10px;
+	margin-right: 8px;
 }
 
 .pagination-item:last-child {
@@ -1224,7 +1225,7 @@ h3.title {
 .pagination-list a{
 	color: black;
 	display: block;
-	padding: 10px 15px;
+	padding: 9px 15px;
 	border: 1px solid rgb(229,229,229);
 	border-radius: 3px;
 	font-size: 13px;
@@ -1234,7 +1235,8 @@ h3.title {
 }
 
 .pagination-item-next a {
-	padding: 10px 30px;
+	padding: 9px 30px;
+	margin-left: 3px;
 }
 
 .pagination-list a:hover,
@@ -1265,7 +1267,7 @@ h3.title {
 	padding: 39px 20px;
 	background-color: rgb(247,243,236);
 	border-radius: 5px;
-	margin: 9px 0;
+	margin-top: 14px;
 }
 
 .scale {
@@ -1288,9 +1290,9 @@ h3.title {
 	width: 4px;
 	height: 4px;
 	background: rgb(171,171,171);
-	border: 11px solid white;
+	border: 8px solid white;
 	border-radius: 50%;
-	top: 27px;
+	top: 30px;
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -1299,12 +1301,13 @@ h3.title {
 }
 
 .range-toggle-max {
-	left: 70%;
+	left: 160px;
 }
 
 .price-controls {
 	display: flex;
 	justify-content: space-between;
+	margin: 9px 0;
 }
 
 .price-controls label {
@@ -1335,15 +1338,19 @@ h3.title {
 	background: none;
 	border: none;
 	padding: 10px 0;
-	padding-left: 15px;
+	padding-left: 18px;
 }
 
 .filters {
-	margin-right: 20px;
+	margin-right: 17px;
 	font-size: 13px;
 	line-height: 18px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
+}
+
+.filters > div {
+	margin-bottom: 10px;
 }
 
 .filters p {
@@ -1358,11 +1365,15 @@ h3.title {
 	border: none;
 	font-size: 15px;
 	line-height: 20px;
-	margin: 0;
 	padding: 0;
-	padding-bottom: 25px;
-	
+}
 
+.all-filters fieldset:not(:first-child) {
+	margin-top: 16px;
+}
+
+fieldset.filter-price {
+	padding-bottom: 16px;
 }
 
 .filters fieldset:not(:last-of-type) {
@@ -1373,12 +1384,11 @@ h3.title {
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
-	padding: 10px 0;
+	padding: 0;
 }
 
 .filters ul {
 	padding: 0;
-	margin: 0;
 	list-style: none;
 	line-height: 20px;
 }
@@ -1388,7 +1398,7 @@ h3.title {
 }
 
 .filters button {
-	padding: 10px 35px;
+	padding: 9px 38px;
 	border: 1px solid rgb(229,229,229);
 	background-color: rgb(255,255,255);
 	border-radius:3px; 
@@ -1398,10 +1408,11 @@ h3.title {
 	line-height: 18px;
 	text-transform: uppercase;
 	color: black;
+	margin-top: 60px;
 }
 
 .filter-option {
-	margin-bottom: 18px;
+	margin-bottom: 20px;
 	padding-left: 35px;
 }
 
@@ -1500,12 +1511,15 @@ h3.title {
 .sorting ul {
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
+	padding: 0;
+	width: 100%;
+	justify-content: space-around;
 }
 
 .sorting li {
-	padding-left: 30px;
-	padding-right: 30px;
+	
 }
 
 .sorting-item {
@@ -1551,9 +1565,14 @@ h3.title {
 }
 
 .some-words {
-	padding-top: 60px;
-	padding-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom: 69px;
 	margin-top: 60px;
+	letter-spacing: 0.1px;
+}
+
+.some-words h2 {
+	margin: 25px 0;
 }
 
 /*----Подвал----*/	
