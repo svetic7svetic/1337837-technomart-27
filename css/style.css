@@ -568,9 +568,9 @@ a.sign-in {
 /*--Слайдер начало--*/
 
 .slider {
-  width: 620px;
-  background-color: black;
-  position: relative;
+	width: 620px;
+	background-color: black;
+	position: relative;
 }
 
 .slider a{
@@ -600,41 +600,45 @@ a.sign-in {
 }
 
 .slider input[type="radio"] {
-  display: none;
+	display: none;
 }
 
 .slider-inner {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .slider-slides {
-  width: 200%;
-  transition: transform 0.5s ease;
-  display: flex;
+	width: 200%;
+	background-color: black;
+	transition: transform 0.5s ease;
+	display: flex;
 }
 
 .slider-controls {
-  position: absolute;
-  bottom: 30px;
-  left: 47%;
-  z-index: 1;
+	position: absolute;
+	bottom: 30px;
+	left: 47%;
+	z-index: 1;
 }
 
 .slider-controls label {
-  display: inline-block;
-  margin: 0 3px;
-  width: 10px;
-  height: 10px;
-  border: 2px solid white;
-  border-radius: 50%;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  background-color: white;
-  transition: background-color 0.3s;
+	display: inline-block;
+	margin: 0 3px;
+	width: 10px;
+	height: 10px;
+	border: 2px solid white;
+	border-radius: 50%;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+	background-color: white;
+	transition: background-color 0.3s;
 }
 
 .slide {
-  position: relative;
+	position: relative;
+	min-width: 620px;
+	min-height: 266px;
+	background-color: black;position: relative;
 }
 
 .slider-controls-left::before,
@@ -1824,6 +1828,7 @@ footer {
 	margin-left: -470px;
 	width: 940px;
 	height: 445px;
+	background-color: gray;
 }
 
 .modal-map iframe {
