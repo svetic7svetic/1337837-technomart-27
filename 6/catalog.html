@@ -140,7 +140,7 @@
 									<label for="filter-dewalt">Dewalt</label>
 								</li>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-hitachi" name="Hitachi"/>
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-hitachi" name="Hitachi" disabled/>
 									<label for="filter-hitachi">Hitachi</label>
 								</li>
 							</ul>
@@ -164,7 +164,7 @@
 				<section> 
 					<div class="sorting"> <!--Сортировка товаров-->
 						<p>Сортировка:</p>
-						<ul>
+						<ul class="sorting-item-list">
 							<li>
 								<input class="visually-hidden" type="radio" id="sorting-1" name="price-type-function" checked/>
 								<label for="sorting-1" class="sorting-item">По цене</label>
@@ -177,15 +177,19 @@
 								<input class="visually-hidden" type="radio" id="sorting-3" name="price-type-function"/>
 								<label for="sorting-3" class="sorting-item">По функционалу</label>
 							</li>
+						</ul>
+						<ul class="sorting-dir-list">
 							<li>
 								<input class="visually-hidden" type="radio" id="sorting-4" name="sort-dir" checked/>
 								<label for="sorting-4" class="sorting-dir">
+									<span class="visually-hidden">Сортировка по возрастанию.</span>
 									<svg x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
 										<polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
 									</svg>
 								</label>
 								<input class="visually-hidden" type="radio" id="sorting-5" name="sort-dir"/>
 								<label for="sorting-5" class="sorting-dir">
+									<span class="visually-hidden">Сортировка по убыванию.</span>
 									<svg x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
 										<polygon fill="#231F20" points="5.5,10 0,0 11,0 "/>
 									</svg>

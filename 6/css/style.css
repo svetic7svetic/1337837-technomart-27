@@ -30,6 +30,11 @@ a {
 	text-decoration: none;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 .visually-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -1514,12 +1519,19 @@ fieldset.filter-price {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-	width: 100%;
 	justify-content: space-between;
 }
 
 .sorting li {
 	padding-right: 17px;
+}
+
+.sorting-item-list {
+	flex-grow: 1;
+}
+
+ul.sorting-dir-list {
+	padding-left: 10px;
 }
 
 .sorting-item {
