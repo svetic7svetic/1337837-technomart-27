@@ -49,7 +49,8 @@
 						<a class="sign-up" href="#">Регистрация</a>
 					</div>
 					<div class="logged-user">
-						<a href="#">Равшан Джамшутович</a>
+						<a href="#" class="current-user">Равшан Джамшутович</a>
+						<a href="#" class="log-out"><span class="visually-hidden">Выход</span></a>
 						
 						<div class="user-menu">
 							<a href="#">Мои заказы</a>
@@ -70,13 +71,12 @@
 				</nav>
 			</section>
 		</header>
-		<main class="inner-page">
+		<main>
 			<section class="container">
 				<div>
 					<ul class="breadcrumbs">
 						<li><a href="index.html">
-							<svg  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								 width="15px" height="12px" viewBox="0 0 15 12" enable-background="new 0 0 15 12" xml:space="preserve">
+							<svg x="0px" y="0px" width="15px" height="12px" viewBox="0 0 15 12" enable-background="new 0 0 15 12" xml:space="preserve">
 								<g>
 								<polygon fill="#C1C6CE" points="3,8 3,12 7,12 7,8 9,8 9,12 13,12 13,8 8,3.516 	"/>
 								<path fill="#C1C6CE" d="M14.831,6.365L13,4.751V0h-2v2.987L8.332,0.635c-0.02-0.017-0.043-0.023-0.064-0.037
@@ -89,7 +89,7 @@
 							</svg>
 						</a></li>
 						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Инструменты</a></li>
+						<li><a href="#">Инструмент</a></li>
 						<li>Перфораторы</li>
 					</ul>
 				</div>
@@ -101,7 +101,7 @@
 				<section class="filters">
 					<h2 class="visually-hidden">Фильтры товаров</h2>
 					<div>
-						<p><strong>Фильтр:</strong></p>
+						<p>Фильтр:</p>
 					</div>
 					<form class="" method="get" action="https://echo.htmlacademy.ru"> 	<!--Фильтры-->
 						<fieldset>
@@ -162,18 +162,37 @@
 				</section>
 				<section> 
 					<div class="sorting"> <!--Сортировка товаров-->
-						<p><strong>Сортировка:</strong></p>
+						<p>Сортировка:</p>
 						<ul>
-							<li><span>По цене</span></li>
-							<li><span>По типу</span></li>
-							<li><span>По функционалу</span></li>
 							<li>
-								<div class="row-up"></div>
-								<div class="row-down"></div>
+								<input class="visually-hidden" type="radio" id="sorting-1" name="price-type-function" checked/>
+								<label for="sorting-1" class="sorting-item">По цене</label>
+							</li>
+							<li>
+								<input class="visually-hidden" type="radio" id="sorting-2" name="price-type-function"/>
+								<label for="sorting-2" class="sorting-item">По типу</label>
+							</li>
+							<li>
+								<input class="visually-hidden" type="radio" id="sorting-3" name="price-type-function"/>
+								<label for="sorting-3" class="sorting-item">По функционалу</label>
+							</li>
+							<li>
+								<input class="visually-hidden" type="radio" id="sorting-4" name="sort-dir" checked/>
+								<label for="sorting-4" class="sorting-dir">
+									<svg x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+										<polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+									</svg>
+								</label>
+								<input class="visually-hidden" type="radio" id="sorting-5" name="sort-dir"/>
+								<label for="sorting-5" class="sorting-dir">
+									<svg x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+										<polygon fill="#231F20" points="5.5,10 0,0 11,0 "/>
+									</svg>
+								</label>
 							</li>
 						</ul>
 					</div>
-					<div> <!--Список перфораторов-->
+					<div class="item-list"> <!--Список перфораторов-->
 						<h2 class="visually-hidden">Список перфораторов</h2>
 						<ul class="popular-list">
 							<li class="item">	<!--Товар 1-->	
@@ -303,7 +322,7 @@
 							<li class="pagination-item pagination-item-current"><a>1</a></li>
 							<li class="pagination-item"><a href="#">2</a></li>
 							<li class="pagination-item"><a href="#">3</a></li>
-							<li class="pagination-item"><a href="#">Следующая</a></li>
+							<li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
 						</ul>
 					</div>
 				</section>

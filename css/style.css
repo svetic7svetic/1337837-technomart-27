@@ -8,7 +8,7 @@ body {
  	font-weight: 400;	
 /*
  	opacity: 0.5;
- 	background-image: url("../technomart-index.jpg");
+ 	background-image: url("../technomart-catalog.jpg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
 */
@@ -236,7 +236,7 @@ a {
 	align-items: flex-start;
 	justify-content: space-between;
 	margin-top: 46px;
-	line-height: 23px;
+	line-height: 21px;
 }
 
 .info-navigation > div {
@@ -246,13 +246,14 @@ a {
 .info {
 	color: rgb(238,54,67);
 	font-size: 16px;
+	line-height: 23px;
 	font-style: italic;
 	margin-top: 3px;
 	margin-left: 52px;
 }
 
 .telephone {	
-	margin-bottom: 15px;
+	margin-bottom: 18px;
 	margin-top: 12px;
 	font-size: 21px;
 	padding-left: 5px;
@@ -264,7 +265,7 @@ a {
 	border: 3px solid white;
 	padding-top: 8px;
 	padding-left: 70px;
-	padding-bottom: 8px;
+	padding-bottom: 7px;
 	padding-right: 50px;
 	position: relative;
 }
@@ -298,14 +299,14 @@ a {
 .sign-in{
 	background-color: white;
 	font-size: 21px;
-	padding: 11px 28px;
+	padding: 12px 28px;
 }
 
 .sign-up {
 	margin-left: 5px;
 	background-color: white;
 	font-size: 21px;
-	padding: 11px 24px;
+	padding: 12px 24px;
 }
 
 .sign a {
@@ -333,21 +334,23 @@ a.sign-in {
 
 .logged-user {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 }
 
-.logged-user > a {
+.logged-user .current-user {
 	color: black;
 	background-color: white;
 	text-align: center;
-	padding: 11px 68px 11px 46px;
+	padding: 12px 68px 12px 46px;
 	font-family: Cuprum, Arial, sans-serif;
 	font-size: 21px;
  	line-height: 21px;
  	position: relative;
+ 	margin-bottom: 5px;
 }
 
-.logged-user > a::before {
+.logged-user .current-user::before {
 	content: "";
 	position: absolute;
 	width: 20px;
@@ -360,17 +363,33 @@ a.sign-in {
 	opacity: 0.3;
 }
 
-.logged-user > a::after {
+.log-out {
+	position: relative;
+}
+
+.logged-user .log-out::before {
 	content: "";
 	position: absolute;
-	width: 21px;
-	height: 17px;
-	top: 14px;
-	right: 10px;
+	width: 40px;
+	height: 45px;
+	top: 0;
+	right: 0;
 	background-image: url("../img/icons/icon-logout.svg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: 50% 50%;
 	opacity: 0.3;
+}
+
+.user-menu {
+	padding-right: 55px;
+}
+
+.user-menu a{
+	color: rgb(50,66,92);
+	text-decoration: underline;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 0 15px;
 }
 
 .my-account {
@@ -380,20 +399,12 @@ a.sign-in {
 .my-account::before {
 	content: "";
 	position: absolute;
-	top: 7px;
+	top: 8px;
 	left: -3px;
 	width: 4px;
 	height: 4px;
 	border-radius: 50%;
 	background-color: rgb(50,66,92);
-}
-
-.user-menu a{
-	color: rgb(50,66,92);
-	text-decoration: underline;
-	font-size: 16px;
-	line-height: 18px;
-	padding: 0 16px;
 }
 
 .sign-in:hover::before,
@@ -425,7 +436,7 @@ a.sign-in {
 	justify-content: space-around;
 	padding: 0px;
 	margin-top: 24px;
-	margin-bottom: 74px;
+	margin-bottom: 65px;
 	background-color: rgb(50,66,92);
 	box-shadow: 0 5px 1px rgb(41,52,73);
 }
@@ -456,7 +467,7 @@ a.sign-in {
 /*----Тело----*/
 
 .advantages {
-	padding-top: 50px;
+	padding-top: 59px;
 	padding-bottom: 33px;
 }
 
@@ -1130,8 +1141,9 @@ h3.title {
 }
 /*----Каталог----*/
 
-.inner-page {
 
+.item-list {
+	margin-bottom: 35px;
 }
 
 .catalog {
@@ -1142,7 +1154,8 @@ h3.title {
 .breadcrumbs {
 	display: flex;
 	padding: 0;
-	margin: 25px 0;
+	margin: 21px 0;
+	margin-bottom: 20px;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	list-style: none;
@@ -1154,7 +1167,8 @@ h3.title {
 
 .breadcrumbs li {
 	position: relative;
-	margin-right: 35px;
+	margin-right: 40px;
+	letter-spacing: 0.2px;
 }
 
 .breadcrumbs li::after,
@@ -1162,20 +1176,19 @@ h3.title {
 	content: "";
 	position: absolute;
 	background-color: rgb(197,201,209);
-	width: 5px;
-	height: 1px;
-	right: -20px;
-	top: 8px;
+	width: 9px;
+	height: 2px;
+	right: -23px;
 }
 
 .breadcrumbs li::after {
 	transform: rotate(45deg);
-	top: 7px;
+	top: 4px;
 }
 
 .breadcrumbs li::before {
 	transform: rotate(-45deg);
-	top: 10px;
+	top: 9px;
 }
 
 .breadcrumbs li:last-child {
@@ -1211,13 +1224,17 @@ h3.title {
 .pagination-list a{
 	color: black;
 	display: block;
-	padding: 12px 17px;
+	padding: 10px 15px;
 	border: 1px solid rgb(229,229,229);
 	border-radius: 3px;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
 	font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.pagination-item-next a {
+	padding: 10px 30px;
 }
 
 .pagination-list a:hover,
@@ -1230,10 +1247,14 @@ h3.title {
 }
 
 
-.pagination-item-current a{
+.pagination-item-current a {
 	background-color: rgb(238,54,67);
 	border: 1px solid rgb(238,54,67);
 	color: white;
+}
+
+.pagination-item-current a:hover {
+	border: 1px solid rgb(238,54,67);
 }
 
 
@@ -1298,8 +1319,11 @@ h3.title {
 }
 
 .max-price::before {
-	content: "";
+	content: "—";
 	position: absolute;
+	top: 9px;
+	left: -21px;
+	color: rgb(68,68,68);
 
 }
 
@@ -1323,7 +1347,7 @@ h3.title {
 }
 
 .filters p {
-	padding: 10px 15px;
+	padding: 10px 19px;
 	margin: 0;
 	width: 100%;
 	background-color: rgb(247,243,236);
@@ -1469,8 +1493,8 @@ h3.title {
 
 .sorting p {
 	margin: 0;
-	padding: 10px 15px;
-	margin-right: 60px;
+	padding: 10px 19px;
+	margin-right: 51px;
 }
 
 .sorting ul {
@@ -1482,41 +1506,49 @@ h3.title {
 .sorting li {
 	padding-left: 30px;
 	padding-right: 30px;
-	opacity: 0.5;
 }
 
-.sorting span{
-	border-bottom: 1px dotted rgb(238,54,67);	
+.sorting-item {
+	color: black;
+	border-bottom: 1px dotted rgb(238,54,67);
+	opacity: 0.3;
 }
 
-.sorting {
-	position: relative;
+.sorting-dir polygon {
+	opacity: 0.3;
 }
 
-.row-up:after {
-	content: "";
-	position: absolute;
-	width: 11px;
-	height: 11px;
-	top: 14px;
-	right: 50px;
-	background-image: url("../img/icons/icon-up-dir.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+.sorting-dir:hover polygon {
+	opacity: 1;
 }
 
-.row-down:after {
-	content: "";
-	position: absolute;
-	width: 11px;
-	height: 11px;
-	top: 14px;
-	right: 17px;
-	background-image: url("../img/icons/icon-down-dir.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+.sorting-item:hover,
+.sorting-item:focus {
+	border-bottom: 1px solid rgb(238,54,67);
+	opacity: 1;
+	cursor: pointer;
 }
 
+.sorting-dir:hover,
+.sorting-dir:focus {
+	border-bottom: none;
+	opacity: 1;
+	cursor: pointer;
+}
+
+#sorting-1:checked ~ label[for="sorting-1"],
+#sorting-2:checked ~ label[for="sorting-2"],
+#sorting-3:checked ~ label[for="sorting-3"] {
+	border-bottom: none;
+	color: rgb(238,54,67);
+	opacity: 1;
+}
+
+#sorting-4:checked ~ label[for="sorting-4"] polygon,
+#sorting-5:checked ~ label[for="sorting-5"] polygon {
+	fill: rgb(238,54,67);
+	opacity: 1;
+}
 
 .some-words {
 	padding-top: 60px;
