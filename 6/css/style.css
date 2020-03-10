@@ -1635,6 +1635,10 @@ footer {
 	margin: 0;
 }
 
+.left-footer-side a {
+	color: white;
+}
+
 .footer-navigation {
 	display: flex;
 	flex-wrap: wrap;
