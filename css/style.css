@@ -1505,7 +1505,7 @@ fieldset.filter-price {
 .sorting p {
 	margin: 0;
 	padding: 10px 19px;
-	margin-right: 51px;
+	margin-right: 120px;
 }
 
 .sorting ul {
@@ -1515,17 +1515,21 @@ fieldset.filter-price {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .sorting li {
-	
+	padding-right: 17px;
 }
 
 .sorting-item {
 	color: black;
 	border-bottom: 1px dotted rgb(238,54,67);
 	opacity: 0.3;
+}
+
+.sorting-dir {
+	padding-left: 18px;
 }
 
 .sorting-dir polygon {
