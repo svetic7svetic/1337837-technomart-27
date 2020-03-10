@@ -6,16 +6,6 @@ body {
 	font-size: 17px;
  	line-height: 18px;
  	font-weight: 400;	
-/*
- 	opacity: 0.5;
- 	background-image: url("../technomart-catalog.jpg");
- 	background-repeat: no-repeat;
- 	background-position: 0 0;
-*/
-}
-
-img {
-  display: block;
 }
 
 html {
@@ -31,6 +21,7 @@ a {
 }
 
 img {
+	display: block;
 	width: 100%;
 	height: auto;
 }
@@ -55,10 +46,7 @@ img {
 	color: #ffffff;
 }
 
-
-
-/*----Хедер----*/
-
+/*--Хедер--*/
 
 .header-main-logo{
 	display: block;
@@ -151,6 +139,7 @@ img {
 	padding-left: 44px;
 	padding-right: 28px;
 }
+
 .user-navigation-cart{
 	display: flex;
 	position:relative;
@@ -470,7 +459,8 @@ a.sign-in {
 	opacity: 0.5;
 	box-shadow: 0 5px 0 rgb(29,39,57);
 }
-/*----Тело----*/
+
+/*--Тело--*/
 
 .advantages {
 	padding-top: 59px;
@@ -575,9 +565,7 @@ a.sign-in {
 	overflow: hidden;
 }	
 
-
-/*----Слайдер начало----*/
-
+/*--Слайдер начало--*/
 
 .slider {
   width: 620px;
@@ -689,7 +677,6 @@ a.sign-in {
 	top: -75px;
 }
 
-
 #product-1:checked ~ .slider-controls label[for="product-1"],
 #product-2:checked ~ .slider-controls label[for="product-2"]{
   background-color: rgb(238,54,67);
@@ -704,9 +691,7 @@ a.sign-in {
   transform: translate(-620px);
 }
 
-
-
-/*----Слайдер конец----*/
+/*--Слайдер конец--*/
 
 .popular{
 	display: flex;
@@ -741,7 +726,6 @@ a.sign-in {
 	line-height: 20px;
 }	
 
-
 .popular-list li {
 	border: 1px solid rgb(234,234,234);
 	margin-bottom: 18px;
@@ -771,7 +755,7 @@ a.sign-in {
 	padding: 10px 55px;
 }
 
-/*----Сетка товаров----*/
+/*--Сетка товаров--*/
 
 .item {
 	position: relative;
@@ -873,7 +857,6 @@ h3.title {
 	fill:white;
 }
 
-
 .buy:hover::before,
 .buy:focus::before{
 	opacity: 1;
@@ -929,7 +912,8 @@ h3.title {
 	opacity: 0.3;
 }
 
-/*----*/
+/*--Конец сетки товаров--*/
+
 .background-services {
 	margin-top: 70px;
 }
@@ -947,7 +931,8 @@ h3.title {
 
 }
 
-/*-Слайдер на услуги-*/
+/*--Слайдер на услуги--*/
+
 .slider-service-slides h2 {
 	padding: 0px;
 	margin: 0px;
@@ -978,14 +963,12 @@ h3.title {
 .slider-service {
 	margin-top: 73px;
 	display: flex;
-
 }
 
 .slider-service-slides {
 	flex-grow: 1;
 	padding-left: 80px;
 }
-
 
 .slider-service-controls {
 	display: flex;
@@ -1145,8 +1128,8 @@ h3.title {
 	margin-top: 32px;
 	margin-bottom: 40px;
 }
-/*----Каталог----*/
 
+/*--Каталог--*/
 
 .item-list {
 	margin-bottom: 37px;
@@ -1253,7 +1236,6 @@ h3.title {
 	border: 1px solid rgb(238,54,67);
 }
 
-
 .pagination-item-current a {
 	background-color: rgb(238,54,67);
 	border: 1px solid rgb(238,54,67);
@@ -1264,8 +1246,7 @@ h3.title {
 	border: 1px solid rgb(238,54,67);
 }
 
-
-/*----Фильтр цены----*/
+/*--Фильтр цены--*/
 
 .range-controls {
 	position: relative;
@@ -1279,7 +1260,6 @@ h3.title {
 	width: 180px;
 	height: 2px;
 	background: rgb(215,220,222);
-
 }
 
 .range-controls .bar {
@@ -1332,7 +1312,6 @@ h3.title {
 	top: 9px;
 	left: -21px;
 	color: rgb(68,68,68);
-
 }
 
 .price-controls input {
@@ -1427,7 +1406,6 @@ fieldset.filter-price {
 	cursor: pointer;
 	user-select: none;
 }
-
 
 .filter-input-checkbox + label::before {
 	content: "";
@@ -1591,7 +1569,7 @@ ul.sorting-dir-list {
 	margin: 25px 0;
 }
 
-/*----Подвал----*/	
+/*--Подвал--*/	
 
 footer {
 	background-color: rgb(41,52,73);
@@ -1666,7 +1644,6 @@ footer {
 	padding-left: 59px;
 }
 
-
 .footer-items-navigation {
 	display: flex;
 }
@@ -1699,7 +1676,6 @@ footer {
 	color: rgb(255,209,128);
 }
 
-
 .footer-items-navigation a:hover,
 .footer-items-navigation a:focus {
 	text-decoration: underline;
@@ -1718,7 +1694,6 @@ footer {
 	font-size: 16px;
 	line-height: 18px;
 	font-family: Cuprum, Arial, sans-serif;
-
 }
 
 .footer-info p {
@@ -1780,7 +1755,7 @@ footer {
 	padding-right: 15px;
 }
 
-/*----модальные окна----*/
+/*--Модальные окна--*/
 
 @keyframes bounce {
 	0% {
@@ -1812,7 +1787,6 @@ footer {
 	100% {
 		transform: translateY(-2000px);
 	}
-
 }
 
 @keyframes shake {
@@ -1842,7 +1816,6 @@ footer {
 	margin-left: -310px;
 	width: 620px;
 	border-top: 7px solid rgb(255,82,87);
-
 }
 
 .modal-map {
@@ -1904,7 +1877,6 @@ footer {
 
 .callback-form div {
 	margin-bottom: 20px;
-
 }
 
 .callback-form label {
@@ -1927,7 +1899,6 @@ footer {
 	width: 220px;
 	padding: 8px 15px;
 	border-radius: 3px;
-
 }
 
 .callback-form input[type="text"],
