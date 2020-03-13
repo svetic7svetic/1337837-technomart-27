@@ -5,7 +5,8 @@
 		<title>Интернет-магазин «Техномарт»</title>
 		<link href="css/normalize.css" rel="stylesheet" />
 		<link href="css/style.css" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">		
 	  <base href="https://htmlacademy-htmlcss.github.io/1337837-technomart-27/6/">
 </head>
 	<body>
@@ -303,9 +304,11 @@
 						Вы можете забрать товар сами,<br>
 						заехав в наш офис:
 					</p>
-					<img class="mini-map" src="img/icons/mini-map.png" width="300" height="158" alt="Как до нас добраться">
+					<a href="map.png">
+						<img class="mini-map" src="img/icons/mini-map.png" width="300" height="158" alt="Как до нас добраться">
+					</a>
 					<!--Здесь будет раскрываться карта-->
-					<button class="write-us button--red" type="button">Заблудились? Напишите нам!</button>
+					<a href="write-us.html" class="write-us button--red" type="button">Заблудились? Напишите нам!</a>
 					<!--Здесь будет форма обратной связи-->
 				</div>
 			</section>
@@ -412,7 +415,7 @@
 		</section>
 		<section class="modal modal-map">	<!--Карта для проезда-->
 			<h2 class="visually-hidden">Как до нас добраться!</h2>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.0232749032275!2d30.31358456561856!3d59.94024545008183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1583600916835!5m2!1sru!2sru" width="940" height="446" frameborder="0" style="border:0;" allowfullscreen="">	
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.0232749032275!2d30.31358456561856!3d59.94024545008183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1583600916835!5m2!1sru!2sru" width="940" height="446" allowfullscreen="">	
 			</iframe>
 			<img src="map.png" width="940" height="446" alt="Магазин по адресу г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8">
 			<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -422,7 +425,7 @@
 				<p>Товар добавлен в корзину!</p>
 			</div>
 			<div class="wrapper-cart">
-				<a class="checkout button--red" type="button">Оформить заказ</a>
+				<a href="#" class="checkout button--red">Оформить заказ</a>
 				<button class="shopping" type="button">Продолжить покупки</button>
 			</div>
 				<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
