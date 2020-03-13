@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Интернет-магазин «Техномарт»</title>
 		<link href="css/normalize.css" rel="stylesheet" />
-		<link href="css/style-min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -12,7 +12,7 @@
 			<section class="main-navigation">
 				<div class="shop-wrapper">
 					<section class="shop-navigation container">
-						<a class="header-main-logo" href="index.html">
+						<a class="header-main-logo">
 							<img src="img/icons/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»"/>
 						</a>
 						<form class="shop-search" action="https://echo.htmlacademy.ru" method="get">
@@ -30,11 +30,11 @@
 						</ul>
 					</section>
 				</div>
-				<section class="info-navigation container">
+				<div class="info-navigation container">
 					<div>
 						<p class="info">
-							Интернет-магазин</br>
-							строительных материалов</br>
+							Интернет-магазин<br>
+							строительных материалов<br>
 							и инструментов для ремонта
 						</p>
 					</div>
@@ -42,7 +42,7 @@
 						<p class="telephone">
 							<a href="tel:+78125550555">+7 (812) 555-05-55</a>
 						</p>
-						<div class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+						<address class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 					</div>
 					<div class="sign">
 						<a class="sign-in" href="#">Войти</a>
@@ -57,10 +57,10 @@
 							<a href="#" class="my-account">Личный кабинет</a>
 						</div>
 					</div>
-				</section>
+				</div>
 				<nav  class="container">
 					<ul class="site-navigation">
-						<li><a>Главная</a></li>
+						<li><a class="current-page">Главная</a></li>
 						<li><a href="#">Компания</a></li>
 						<li><a href="catalog.html">Каталог</a></li>
 						<li><a href="#">Новости</a></li>
@@ -98,8 +98,8 @@
 					<li>
 						<section> <!----Слайдер--->
         					<div class="slider">
-          						<input type="radio" id="product-1" name="toggle" checked />
-         						<input type="radio" id="product-2" name="toggle" />
+          						<input type="radio" id="product-1" name="toggle" />
+         						<input type="radio" id="product-2" name="toggle" checked />
           						<div class="slider-controls">
             						<label class="slider-controls-left" for="product-1"></label>
             						<label class="slider-controls-right" for="product-2"></label>
@@ -153,10 +153,7 @@
       						<a href="#" class="bookmark">В закладки</a>
     					</div>					
 						<img src="img/content/bosch-bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000" />
-						<h3 class="title">
-							<span>Перфоратор BOSCH</span><br>
-							<span>BFG 9000</span>
-						</h3>					
+						<div class="title">Перфоратор BOSCH BFG 9000</div>					
 						<div class="discount">32500 Р.</div>
 						<div class="price">25500 Р.</div>
 					</li>
@@ -166,10 +163,7 @@
       						<a href="#" class="bookmark">В закладки</a>
     					</div>						
 						<img src="img/content/bosch-bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000" />
-						<h3 class="title">
-							<span>Перфоратор BOSCH</span><br>
-							<span>BFG 3000</span>
-						</h3>					
+						<div class="title">Перфоратор BOSCH BFG 3000</div>
 						<div class="discount">22500 Р.</div>
 						<div class="price">15500 Р.</div>
 					</li>
@@ -179,10 +173,7 @@
       						<a href="#" class="bookmark">В закладки</a>
     					</div>	
 						<img src="img/content/bosch-bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" />
-						<h3 class="title">
-							<span>Перфоратор BOSCH</span><br>
-							<span>BFG 6000</span>
-						</h3>					
+						<div class="title">Перфоратор BOSCH BFG 6000</div>					
 						<div class="discount">30500 Р.</div>
 						<div class="price">25500 Р.</div>
 					</li>
@@ -193,10 +184,7 @@
       						<a href="#" class="bookmark">В закладки</a>
     					</div>						
 						<img src="img/content/bosch-bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" />
-						<h3 class="title">
-							<span>Перфоратор BOSCH</span><br>
-							<span>BFG 2000</span>
-						</h3>					
+						<div class="title">Перфоратор BOSCH BFG 2000</div>					
 						<div class="discount"></div>
 						<div class="price">12500 Р.</div>
 					</li>
@@ -268,17 +256,14 @@
          				    <div class="delivery-slide service-slide">
          				       	<h2 class="large">Доставка</h2>
          				        <p class="small">Мы с удовольствием доставим ваш товар прямо<br>
-         				        	к вашему подъезду совершенно бесплатно!<br>
-         				        	Ведь мы неплохо заработаем,<br>
+         				        	к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
          				        	поднимая его на ваш этаж!
          				        </p>
          				    </div>
          				    <div class="guarantee-slide service-slide">
          				    	<h2 class="large">Гарантия</h2>
          				        <p class="small">Если купленный у нас товар поломается или заискрит,<br>
-         				        	а также в случае пожара, спровоцированного его возгоранием,<br>
-         				        	вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-         				        	сгоревший товар на новый.<br>
+         				        	а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
          				        	Дом уж восстановите как-нибудь сами.
          				        </p>
          				    </div>
@@ -296,10 +281,12 @@
 			<section class="about-us container">	<!--О компании-->
 				<div class="about-company">
 					<h2 class="big">Компания «Техномарт»</h2>
-					<p class="small">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> 
-						строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.<br>
-						<br>
-						Мы можем доставить ваш товар в самые отдалённые точки России!</br>
+					<p class="small">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+					</p>
+					<p class="small">
+						Мы можем доставить ваш товар в самые отдалённые точки России!
+					</p>
+					<p class="small">
 						Техномарт работает со многими транспортными компаниями:
 					</p>
 					<ul class="partners">
@@ -312,7 +299,7 @@
 				<div class="contacts">	<!--Контакты-->
 					<h2 class="big">Контакты</h2>
 					<p class="small">
-						Вы можете забрать товар сами,</br>
+						Вы можете забрать товар сами,<br>
 						заехав в наш офис:
 					</p>
 					<img class="mini-map" src="img/icons/mini-map.png" width="300" height="158" alt="Как до нас добраться">
@@ -326,13 +313,13 @@
 			<section class="footer-background">
 				<div class="container header-up-line">
 					<div class="left-footer-side">
-						<a class="footer-main-logo" href="index.html">
+						<a class="footer-main-logo">
 							<img src="img/icons/logo-technomart.svg" width="137" height="22" alt="Логотип интернет-магазина «Техномарт»">
 						</a>
-						<p>
-							г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+						<div>
+							<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 							<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-						</p>
+						</div>
 					</div>
 					<nav class="footer-navigation">
 						<ul class="footer-site-navigation">
@@ -389,11 +376,11 @@
 					</ul>
 				<div class="callback">
 					<p>
-						Обратная связь:</br>
+						Обратная связь:<br>
 						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 					</p>
 					<p>
-						Разработано —</br>
+						Разработано —<br>
 						<a href="htmlacademy.ru">htmlacademy.ru</a>
 					</p>
 				</div>
@@ -434,7 +421,7 @@
 				<p>Товар добавлен в корзину!</p>
 			</div>
 			<div class="wrapper-cart">
-				<button class="checkout button--red" type="button">Оформить заказ</button>
+				<a class="checkout button--red" type="button">Оформить заказ</a>
 				<button class="shopping" type="button">Продолжить покупки</button>
 			</div>
 				<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
