@@ -57,6 +57,8 @@ body {
 }
 
 html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -354,6 +356,7 @@ img {
 
 .sign a {
 	display: inline-block;
+	vertical-align: middle;
 	color: #000000;
 	position: relative;
 }
@@ -482,6 +485,7 @@ a.sign-in {
 
 .site-navigation {
 	display:flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 0px;
 	margin-top: 24px;
@@ -683,6 +687,7 @@ a.current-page:active {
 
 .slider-controls label {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 0 3px;
 	width: 10px;
 	height: 10px;
@@ -785,7 +790,6 @@ a.current-page:active {
 
 .popular-list {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap:wrap;
 	text-align:center;
 	list-style: none;
@@ -834,9 +838,7 @@ a.current-page:active {
 	text-align: center;
 	font-size: 18px;
 	border: 1px solid rgb(234,234,234);
-	margin-bottom: 20px;
 }
-
 
 .item .title {
 	min-height: 40px;
@@ -964,7 +966,15 @@ a.current-page:active {
 	height: 145px;
 	overflow: hidden;
 	border: 1px solid rgb(234,234,234);
+}
+
+.popular-items li {	
+	margin-right: 20px;
 	margin-bottom: 20px;
+}
+
+.popular-items li:nth-child(4n) {
+	margin-right: 0;
 }
 
 .buy:hover,
@@ -1149,6 +1159,7 @@ a.current-page:active {
 .request {
 	padding: 10px 40px;
 	display: inline-block;
+	vertical-align: middle;
 	margin-top: 15px;
 }
 
@@ -1249,6 +1260,15 @@ a.current-page:active {
 
 .item-list {
 	margin-bottom: 37px;
+}
+
+.item-list li {
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.item-list li:nth-child(3n) {
+	margin-right: 0;
 }
 
 .catalog {
@@ -1442,7 +1462,7 @@ a.current-page:active {
 }
 
 .filters {
-	margin-right: 17px;
+	margin-right: 16px;
 	font-size: 13px;
 	line-height: 18px;
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -1690,7 +1710,7 @@ ul.sorting-dir-list {
 
 /*--Подвал--*/	
 
-footer {
+.footer {
 	background-color: rgb(41,52,73);
 	color: #ffffff;
 	list-style: none;
@@ -1785,7 +1805,7 @@ footer {
 	opacity: 0.5;
 }
 
-.footer-navigation ul{
+.footer-navigation ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
