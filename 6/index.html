@@ -50,7 +50,7 @@
 						<a class="sign-in" href="#">Войти</a>
 						<a class="sign-up" href="#">Регистрация</a>
 					</div>
-					<div class="logged-user visually-hidden">
+					<div class="logged-user user-display-none">
 						<a href="#" class="current-user">Равшан Джамшутович</a>
 						<a href="#" class="log-out"><span class="visually-hidden">Выход</span></a>
 						
@@ -100,8 +100,8 @@
 					<li>
 						<section> <!----Слайдер--->
         					<div class="slider">
-          						<input type="radio" id="product-1" name="toggle" />
-         						<input type="radio" id="product-2" name="toggle" checked />
+          						<input class="visually-hidden" type="radio" id="product-1" name="toggle"/>
+         						<input class="visually-hidden" type="radio" id="product-2" name="toggle" checked/>
           						<div class="slider-controls">
             						<label class="slider-controls-left" for="product-1"><span class="visually-hidden">Переключатель на первый слайд</span></label>
             						<label class="slider-controls-right" for="product-2"><span class="visually-hidden">Переключатель на второй слайд</span></label>
@@ -198,43 +198,43 @@
 					<a class="all-manufacturers button--red" href="#">Все производители</a>
 				</div>
 				<ul class="popular-list">
-					<li class="manufacturers">
-						<a href="#">
+					<li>
+						<a class="manufacturers" href="#">
 							<img src="img/icons/bosch.png" width="220" height="145" alt="Bosch" />
 						</a>
 					</li>
-					<li class="manufacturers">
-						<a href="#">
+					<li>
+						<a class="manufacturers" href="#">
 							<img src="img/icons/makita.png" width="220" height="145" alt="Makita" />
 						</a>
 					</li>
-					<li class="manufacturers">
-						<a href="#">
+					<li>
+						<a class="manufacturers" href="#">
 							<img src="img/icons/dewalt.png" width="220" height="145" alt="Dewalt" />
 						</a>
 					</li>
-					<li class="manufacturers">
-						<a href="#">
+					<li>
+						<a class="manufacturers" href="#">
 							<img src="img/icons/interscol.png" width="220" height="145" alt="Интерскол" />
 						</a>
 					</li>
-					<li class="manufacturers">
-						<a href="#">
+					<li>
+						<a class="manufacturers" href="#">
 							<img src="img/icons/hitachi.png" width="220" height="145" alt="Hitachi" />
 						</a>
 					</li>
-					<li class="manufacturers">
-						<a href="#">
+					<li>
+						<a class="manufacturers" href="#">
 							<img src="img/icons/lg.png" width="220" height="145" alt="Lg" />
 						</a>
 					</li>
-					<li class="manufacturers">
-						<a href="#">
+					<li>
+						<a class="manufacturers" href="#">
 							<img src="img/icons/aeg.png" width="220" height="145" alt="Aeg" />
 						</a>
 					</li>
-					<li class="manufacturers">
-						<a href="#">
+					<li>
+						<a class="manufacturers" href="#">
 							<img src="img/icons/metabo.png" width="220" height="145" alt="Metabo" />
 						</a>
 					</li>
@@ -304,8 +304,8 @@
 						Вы можете забрать товар сами,<br>
 						заехав в наш офис:
 					</p>
-					<a href="map.png">
-						<img class="mini-map" src="img/icons/mini-map.png" width="300" height="158" alt="Как до нас добраться">
+					<a class="mini-map" href="map.png">
+						<img src="img/icons/mini-map.png" width="300" height="158" alt="Как до нас добраться">
 					</a>
 					<!--Здесь будет раскрываться карта-->
 					<a href="write-us.html" class="write-us button--red">Заблудились? Напишите нам!</a>
