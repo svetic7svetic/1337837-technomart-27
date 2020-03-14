@@ -2090,3 +2090,10 @@ footer {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+
+/*--Форма обратной связи на отдельной странице--*/
+
+.write-us {
+	width: 620px;
+	margin: 0 auto;
+}
