@@ -1,4 +1,4 @@
-var callbackLink = document.querySelector(".write-us");
+var callbackLink = document.querySelector(".write-us-button");
 			
 var callbackPopup = document.querySelector(".modal-callback");
 var callbackClose = callbackPopup.querySelector(".modal-close");
