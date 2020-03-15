@@ -1627,6 +1627,10 @@ fieldset.filter-price {
 
 /*--------*/
 
+.sorting-wrapper {
+	width: 100%;
+}
+
 .sorting {
 	display: flex;
 	background-color: rgb(247,243,236);
