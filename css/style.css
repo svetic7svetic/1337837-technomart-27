@@ -73,6 +73,7 @@ a {
 img {
 	display: block;
 	width: 100%;
+	height: auto;
 }
 
 .visually-hidden {
@@ -480,7 +481,7 @@ a.sign-in {
 .sign-up:active,
 .user-menu a:active,
 .logged-user > a:active {
-	opacity: 0.3;
+	color: rgba(0,0,0,0.3);
 }
 
 .site-navigation {
