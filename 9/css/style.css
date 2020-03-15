@@ -73,6 +73,7 @@ a {
 img {
 	display: block;
 	width: 100%;
+	height: auto;
 }
 
 .visually-hidden {
@@ -117,7 +118,7 @@ img {
 }
 
 .main-header {
-	background-color: rgb(243,247,248);
+	background-color: rgb(242,246,248);
 }
 
 .main-navigation {
@@ -378,22 +379,26 @@ a.sign-in {
 	opacity: 0.3;
 }
 
+.user-menu {
+	display: flex;
+	flex-direction: column;
+	padding-left: 11px;
+}
+
 .logged-user {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
+	justify-content: space-between;
+	background-color: white;
 }
 
 .logged-user .current-user {
 	color: black;
-	background-color: white;
 	text-align: center;
-	padding: 12px 68px 12px 46px;
+	padding: 12px 40px 12px 46px;
 	font-family: Cuprum, Arial, sans-serif;
 	font-size: 21px;
  	line-height: 21px;
  	position: relative;
- 	margin-bottom: 5px;
 }
 
 .logged-user .current-user::before {
@@ -401,7 +406,8 @@ a.sign-in {
 	position: absolute;
 	width: 20px;
 	height: 18px;
-	top: 13px;
+	top: 50%;
+	margin-top: -10px;
 	left: 13px;
 	background-image: url("../img/icons/icon-user.svg");
 	background-repeat: no-repeat;
@@ -418,24 +424,27 @@ a.sign-in {
 	position: absolute;
 	width: 40px;
 	height: 45px;
-	top: 0;
-	right: 0;
+	top: 50%;
+	margin-top: -23px;
+	right: 1px;
 	background-image: url("../img/icons/icon-logout.svg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	opacity: 0.3;
 }
 
-.user-menu {
-	padding-right: 55px;
+.user-options {
+	padding-right: 58px;
+	text-align: right;
+ 	margin-top: 5px;
 }
 
-.user-menu a{
+.user-options a{
 	color: rgb(50,66,92);
 	text-decoration: underline;
 	font-size: 16px;
 	line-height: 18px;
-	padding: 0 15px;
+	padding: 0 14px;
 }
 
 .my-account {
@@ -459,10 +468,8 @@ a.sign-in {
 
 .sign-in:hover::before,
 .sign-in:focus::before,
-.logged-user > a:hover::before,
-.logged-user > a:hover::after,
-.logged-user > a:focus::before,
-.logged-user > a:focus::after {
+.logged-user a:hover::before,
+.logged-user a:focus::before {
 	opacity: 1;
 }
 
@@ -470,18 +477,23 @@ a.sign-in {
 .sign-in:focus,
 .sign-up:hover,
 .sign-up:focus,
-.user-menu a:hover,
-.user-menu a:focus {
+.user-options a:hover,
+.user-options a:focus {
 	color: rgb(238,54,67);
 }
 
 .sign-in:active::before,
-.sign-in:active,
-.sign-up:active,
-.user-menu a:active,
-.logged-user > a:active {
+.user-options a:active,
+.logged-user a:active {
 	opacity: 0.3;
 }
+
+
+.sign-in:active,
+.sign-up:active {
+	color: rgba(0,0,0,0.3);
+}
+
 
 .site-navigation {
 	display:flex;
@@ -770,7 +782,7 @@ a.current-page:active {
 	display: flex;
 	padding-left: 28px;
 	padding-right: 24px;
-	background-color: rgb(249,245,240);
+	background-color: rgb(242,246,248);
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 20px;
@@ -1024,7 +1036,7 @@ a.current-page:active {
 }
 
 .wrapper {
-	background-color: rgb(243,247,248);
+	background-color: rgb(242,246,248);
 }
 
 .serviсes {
@@ -1259,7 +1271,7 @@ a.current-page:active {
 /*--Каталог--*/
 
 .item-list {
-	margin-bottom: 37px;
+	margin-bottom: 32px;
 }
 
 .item-list li {
@@ -1462,11 +1474,15 @@ a.current-page:active {
 }
 
 .filters {
-	margin-right: 16px;
+	margin-right: 20px;
 	font-size: 13px;
 	line-height: 18px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
+}
+
+.filters fieldset {
+	margin: 0;
 }
 
 .filters > div {
