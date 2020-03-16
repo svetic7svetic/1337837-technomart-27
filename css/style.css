@@ -31,7 +31,7 @@
 }
 
 @font-face {
-	font-family: "PT Sans";
+	font-family: "PTSans";
 	font-style: normal;
 	font-weight: 400;
 	src: url("../fonts/PTSans/ptsans.woff") format("woff");
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-	font-family: "PT Sans";
+	font-family: "PTSans";
 	font-style: normal;
 	font-weight: 700;
 	src: url("../fonts/PTSans/ptsansbold.woff") format("woff");
