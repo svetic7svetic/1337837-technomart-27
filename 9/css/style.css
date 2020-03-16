@@ -31,19 +31,19 @@
 }
 
 @font-face {
-	font-family: "PT-Sans";
+	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 400;
-	src: url("../fonts/PT-Sans/ptsans.woff") format("woff");
-	src: url("../fonts/PT-Sans/ptsans.woff2") format("woff2");
+	src: url("../fonts/PTSans/ptsans.woff") format("woff");
+	src: url("../fonts/PTSans/ptsans.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "PT-Sans";
+	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 700;
-	src: url("../fonts/PT-Sans/ptsansbold.woff") format("woff");
-	src: url("../fonts/PT-Sans/ptsansbold.woff2") format("woff2");
+	src: url("../fonts/PTSans/ptsansbold.woff") format("woff");
+	src: url("../fonts/PTSans/ptsansbold.woff2") format("woff2");
 }
 
 body {
@@ -808,7 +808,7 @@ a.current-page:active {
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: bold;
 	line-height: 20px;
 }	
@@ -1218,7 +1218,7 @@ a.current-page:active {
 
 .small {
 	font-size: 13px;
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	line-height: 24px;
 	text-transform: none;
 	margin: 0;
@@ -1299,7 +1299,7 @@ a.current-page:active {
 	list-style: none;
 	font-size: 13px;
 	line-height: 18px;
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -1368,7 +1368,7 @@ a.current-page:active {
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 }
 
 .pagination-item-next a {
@@ -1478,7 +1478,7 @@ a.current-page:active {
 	margin-right: 20px;
 	font-size: 13px;
 	line-height: 18px;
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -1542,7 +1542,7 @@ fieldset.filter-price {
 	border-radius:3px; 
 	font-size: 13px;
 	font-weight: normal;
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: black;
@@ -1639,7 +1639,7 @@ fieldset.filter-price {
 	margin-bottom: 20px;
 	font-size: 13px;
 	line-height: 18px;
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -2072,7 +2072,7 @@ ul.sorting-dir-list {
 	border: 2px solid rgb(215,220,220);
 	font-size: 13px;
 	line-height: 18px;
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 }
 
 .callback-form input:hover,
