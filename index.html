@@ -2,11 +2,11 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge" />
 		<title>Интернет-магазин «Техномарт»</title>
-		<link href="css/normalize.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize-min.css" rel="stylesheet" />
 		<link href="css/style-min.css" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">		
 	</head>
 	<body>
 		<header class="main-header">
@@ -49,11 +49,12 @@
 						<a class="sign-in" href="#">Войти</a>
 						<a class="sign-up" href="#">Регистрация</a>
 					</div>
-					<div class="logged-user user-display-none">
-						<a href="#" class="current-user">Равшан Джамшутович</a>
-						<a href="#" class="log-out"><span class="visually-hidden">Выход</span></a>
-						
-						<div class="user-menu">
+					<div class="user-menu user-display-none">
+						<div class="logged-user">
+							<a href="#" class="current-user">Равшан Джамшутович</a>
+							<a href="#" class="log-out"><span class="visually-hidden">Выход</span></a>
+						</div>
+						<div class="user-options">
 							<a href="#">Мои заказы</a>
 							<a href="#" class="my-account">Личный кабинет</a>
 						</div>
@@ -191,7 +192,7 @@
 					</li>
 				</ul>
 			</section>
-			<section class="popular-manufacturers container"> <!--Список популярных производителей-->
+			<section class="popular-items container"> <!--Список популярных производителей-->
 				<div class="popular">
 					<h2>Популярные производители:</h2>
 					<a class="all-manufacturers button--red" href="#">Все производители</a>
@@ -199,42 +200,42 @@
 				<ul class="popular-list">
 					<li>
 						<a class="manufacturers" href="#">
-							<img src="img/icons/bosch.png" width="220" height="145" alt="Bosch" />
+							<img src="img/icons/bosch.png" width="218" height="143" alt="Bosch" />
 						</a>
 					</li>
 					<li>
 						<a class="manufacturers" href="#">
-							<img src="img/icons/makita.png" width="220" height="145" alt="Makita" />
+							<img src="img/icons/makita.png" width="218" height="143" alt="Makita" />
 						</a>
 					</li>
 					<li>
 						<a class="manufacturers" href="#">
-							<img src="img/icons/dewalt.png" width="220" height="145" alt="Dewalt" />
+							<img src="img/icons/dewalt.png" width="218" height="143" alt="Dewalt" />
 						</a>
 					</li>
 					<li>
 						<a class="manufacturers" href="#">
-							<img src="img/icons/interscol.png" width="220" height="145" alt="Интерскол" />
+							<img src="img/icons/interscol.png" width="218" height="143" alt="Интерскол" />
 						</a>
 					</li>
 					<li>
 						<a class="manufacturers" href="#">
-							<img src="img/icons/hitachi.png" width="220" height="145" alt="Hitachi" />
+							<img src="img/icons/hitachi.png" width="218" height="143" alt="Hitachi" />
 						</a>
 					</li>
 					<li>
 						<a class="manufacturers" href="#">
-							<img src="img/icons/lg.png" width="220" height="145" alt="Lg" />
+							<img src="img/icons/lg.png" width="218" height="143" alt="Lg" />
 						</a>
 					</li>
 					<li>
 						<a class="manufacturers" href="#">
-							<img src="img/icons/aeg.png" width="220" height="145" alt="Aeg" />
+							<img src="img/icons/aeg.png" width="218" height="143" alt="Aeg" />
 						</a>
 					</li>
 					<li>
 						<a class="manufacturers" href="#">
-							<img src="img/icons/metabo.png" width="220" height="145" alt="Metabo" />
+							<img src="img/icons/metabo.png" width="218" height="143" alt="Metabo" />
 						</a>
 					</li>
 				</ul>
