@@ -1727,6 +1727,7 @@ ul.sorting-dir-list {
 .left-footer-side {
 	flex-grow: 1;
 	width: 100%;
+	max-width: 390px;
 }
 
 .left-footer-side div {
@@ -1748,6 +1749,7 @@ ul.sorting-dir-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
+	max-width: 550px;
 }
 
 .footer-site-navigation {
@@ -2135,5 +2137,7 @@ ul.sorting-dir-list {
 
 .write-us {
 	width: 620px;
-	margin: 0 auto;
+	margin: 50px auto;
+	border: 2px solid rgb(238,54,67);
+	border-top: 7px solid rgb(238,54,67);
 }
