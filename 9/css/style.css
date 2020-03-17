@@ -463,6 +463,7 @@ a.sign-in {
 .site-navigation li:first-child {
 	padding-left: 21px;
 }
+
 .site-navigation li:last-child {
 	padding-right: 23px;
 }
@@ -712,7 +713,7 @@ a.current-page:active {
 }
 
 #product-1:checked ~ .slider-controls label[for="product-1"],
-#product-2:checked ~ .slider-controls label[for="product-2"]{
+#product-2:checked ~ .slider-controls label[for="product-2"] {
   background-color: rgb(238,54,67);
 }
 
@@ -725,7 +726,7 @@ a.current-page:active {
 }
 
 #product-1:focus ~ .slider-controls label[for="product-1"],
-#product-2:focus ~ .slider-controls label[for="product-2"]{
+#product-2:focus ~ .slider-controls label[for="product-2"] {
 	outline: 2px solid skyblue;
 }
 
@@ -739,8 +740,7 @@ a.current-page:active {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 20px;
-	font-family: "Cuprum", Arial, sans-serif;
-	
+	font-family: "Cuprum", Arial, sans-serif;	
 } 
 
 .popular h2 {
@@ -998,7 +998,6 @@ a.current-page:active {
 
 .serviсes p {
 	margin: 25px 0;
-
 }
 
 /*--Слайдер на услуги--*/
@@ -1566,7 +1565,7 @@ fieldset.filter-price {
 .filter-input-radio:hover + label::before,
 .filter-input-radio:focus + label::before,
 .filter-input-radio:hover + label::after,
-.filter-input-radio:focus + label::after{
+.filter-input-radio:focus + label::after {
 	opacity: 1;
 }
 
